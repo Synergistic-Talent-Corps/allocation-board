@@ -46,7 +46,7 @@ body{
 
 .companyblock{
     float: left;
-    width: 33.3%;
+    width: 150px;
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
@@ -59,6 +59,11 @@ body{
 
 .companyblock a{
     text-decoration: none;
+}
+
+.companyblock li{
+    background-color: red;
+    border: 1px solid black;
 }
 
 .ondeck{

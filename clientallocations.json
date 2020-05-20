@@ -1,0 +1,49 @@
+{
+    "clientAllocations": [{
+            "employeeName": "Jeff Meidt",
+            "clientName": "On Deck",
+            "clientStartDate": "03-01-2020",
+            "clientEndDate": ""
+        }, {
+            "employeeName": "Tony Pember",
+            "clientName": "On Deck",
+            "clientStartDate": "03-01-2020",
+            "clientEndDate": ""
+        }, {
+            "employeeName": "Akila Kovu",
+            "clientName": "Delta Dental",
+            "clientStartDate": "06-01-2019",
+            "clientEndDate": "06-01-2020"
+        }, {
+            "employeeName": "Garret Egge",
+            "clientName": "Delta Dental",
+            "clientStartDate": "03-01-2019",
+            "clientEndDate": "03-01-2020"
+        }, {
+            "employeeName": "Alex Brickner",
+            "clientName": "On Deck",
+            "clientStartDate": "03-01-2019",
+            "clientEndDate": "06-01-2020"
+        }, {
+            "employeeName": "Alexander Helmke",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "01-31-2019",
+            "clientEndDate": "03-01-2019"
+        }, {
+            "employeeName": "George R R Martin",
+            "clientName": "Delta Dental",
+            "clientStartDate": "01-01-2019",
+            "clientEndDate": "06-01-2020"
+        }, {
+            "employeeName": "Tiffany Diner",
+            "clientName": "Delta Dental",
+            "clientStartDate": "02-01-2019",
+            "clientEndDate": "02-01-2020"
+        }, {
+            "employeeName": "Ismaila Sall",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "02-01-2019",
+            "clientEndDate": ""
+        }
+    ]
+}
