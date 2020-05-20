@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "jsx": "react",
+        "watch": true,
+        "target": "es5",
+        "lib": ["es6", "dom"]
+    }
+}
