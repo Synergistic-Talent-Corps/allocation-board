@@ -21,7 +21,7 @@ import { Navbar } from './navbar';
 
 // file reader using Java script
 
-let runOnDeckArray : string[] = OnDeckMapping
+let runOnDeckArray : string[] = OnDeckMapping();
 // let onDeck : Array<string> = [
 //     "Consultant 1",
 //     "Consultant 2",
