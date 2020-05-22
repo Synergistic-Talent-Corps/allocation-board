@@ -4,6 +4,9 @@
         "jsx": "react",
         "watch": true,
         "target": "es5",
-        "lib": ["es6", "dom"]
+        "lib": ["es6", "dom"],
+        "strict": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true
     }
 }
