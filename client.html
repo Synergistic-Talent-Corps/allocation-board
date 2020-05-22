@@ -3,13 +3,27 @@
 <head>
     <title>tapQA Allocation Board</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <style>
     #p01 {
-            position: relative; left: 20px; top:20px; background-color:Green; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px;
+            position: relative; left: 20px; top:20px; background-color:Green; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px; box-shadow: inset -2px -3px 3px rgba(0, 0, 0, 0.507);
         }
     #p02 {
-            position: relative; left: 20px; top:20px; background-color:Gray; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px;
+            position: relative; left: 20px; top:20px; background-color:Gray; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px; box-shadow: inset -2px -3px 3px rgba(0, 0, 0, 0.507);
         }
+    #p03 {
+            position: relative; left: 20px; top:20px; background-color:red; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px; box-shadow: inset -2px -3px 3px rgba(0, 0, 0, 0.507);
+        }
+    #p04 {
+            position: relative; left: 20px; top:20px; background-color:yellow; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px; box-shadow: inset -2px -3px 3px rgba(0, 0, 0, 0.507);
+        }
+    #p05 {
+            position: relative; left: 20px; top:20px; background-color:orange; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px; box-shadow: inset -2px -3px 3px rgba(0, 0, 0, 0.507);
+        }
+    .icon {
+            background: url("Images/Lead.png"); height: 20px; width: 20px; display: block;
+    }
+
 </style>
 </head>
 <body>
@@ -30,23 +44,27 @@
             </div>
         </navbar>
         <div class="row">
-        <div class="column" style = "width:300px; height:400px; border:2px solid black; border-radius:10px;">
+        <div class="column" style = "width:300px; height:400px; border:2px solid black; border-radius:10px; box-shadow: 2px 3px 6px gray;">
             <div class="card">
                 <h1 style="text-align:center;">Client ONE</h1>
-                <div style = "border-top: 2px solid green; width:300px;"></div>
+                <div style = "border-top: 2px solid black; width:300px;"></div>
                 <p id="p02">Employee/Point of Contact </p>
-                <p id="p01">Employee 1 </p>
-                <p id="p01">Employee 1 </p>
+                <p id="p03">Employee 1 </p>
+
+                <i class="icon"></i>
+                <i class="fa fa-car"></i>
+
+                <p id="p04">Employee 1 </p>
                 <p id="p01">Employee 1 </p>
             </div>
         </div>
-            <div class="column" style = "width:300px; height:400px; border:2px solid black; border-radius:10px;">
+            <div class="column" style = "width:300px; height:400px; border:2px solid black; border-radius:10px; box-shadow: 2px 3px 6px gray;">
                 <div class="card">
                     <h1 style="text-align:center;">Client TWO</h1>
-                    <div style = "border-top: 2px solid green; width:300px;"></div>
+                    <div style = "border-top: 2px solid black; width:300px;"></div>
                     <p id="p02">Employee/Point of Contact </p>
                     <p id="p01">Employee 1 </p>
-                    <p id="p01">Employee 1 </p>
+                    <p id="p05">Employee 1 </p>
                     <p id="p01">Employee 1 </p>
                 </div>
             </div>
