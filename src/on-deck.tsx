@@ -18,9 +18,6 @@ function OnDeck(props: OnDeckProps) {
     )
 }
 
-interface MappedArray {
-    MappedArray: string[];
-}
 
 function OnDeckMapping() {
     var obj = clientAllocations.clientAllocations
