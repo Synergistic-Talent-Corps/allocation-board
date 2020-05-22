@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>tapQA Allocation Board</title>
     <link rel="stylesheet" href="css/style.css">
@@ -12,6 +13,40 @@
         }
 </style>
 </head>
+<style>
+    h1 {
+        text-align: center
+    }
+
+    .column {
+        width: 300px;
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 3px 6px gray;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+
+    .div1 {
+        width: 300px;
+        height: 25px;
+        padding-left: 10%;
+        box-sizing: border-box;
+    }
+
+    .div2 {
+        width: 300px;
+        height: 25px;
+        box-sizing: border-box;
+    }
+</style>
+
+
+
 <body>
     <div class="container">
         <header id="main-header">
@@ -29,31 +64,21 @@
                 </ul>
             </div>
         </navbar>
-        <div class="row">
-        <div class="column" style = "width:300px; height:400px; border:2px solid black; border-radius:10px;">
+
+        <div class="column">
             <div class="card">
-                <h1 style="text-align:center;">Client ONE</h1>
-                <div style = "border-top: 2px solid green; width:300px;"></div>
-                <p id="p02">Employee/Point of Contact </p>
-                <p id="p01">Employee 1 </p>
-                <p id="p01">Employee 1 </p>
-                <p id="p01">Employee 1 </p>
+                <h1>Client ONE</h1>
+                <div style="border-top: 2px solid black; width:300px;"></div>
+                <div class="div1">Employee / Point of Contact</div>
+                <div class="div2">Employee</div>
+                <div class="div2">Employee2</div>
             </div>
         </div>
-            <div class="column" style = "width:300px; height:400px; border:2px solid black; border-radius:10px;">
-                <div class="card">
-                    <h1 style="text-align:center;">Client TWO</h1>
-                    <div style = "border-top: 2px solid green; width:300px;"></div>
-                    <p id="p02">Employee/Point of Contact </p>
-                    <p id="p01">Employee 1 </p>
-                    <p id="p01">Employee 1 </p>
-                    <p id="p01">Employee 1 </p>
-                </div>
-            </div>
-        </div>
+
         <footer id="main-footer">
             <p>Copyright &copy; 2020 tapQA. All Rights Reserved</p>
         </footer>
     </div>
 </body>
+
 </html>
