@@ -1,16 +1,16 @@
 import * as React from 'react';
 import * as clientAllocations from './json/clientAllocations.json'
 
-type OnDeckProps = {
-    onDeckArray: Array<string>
-}
+function OnDeck() {
+    let onDeckArray: Array<string> = [];
 
-function OnDeck(props: OnDeckProps) {
+    OnDeckMapping(onDeckArray);
+ 
     return (
         <div className="ondeck">
             <p>On-Deck</p>
             <ul>
-                {props.onDeckArray.map((value, index) => {
+                {onDeckArray.map((value, index) => {
                     return <li key={index} style={{ color: value }}><a href="consultant.html">{value}</a></li>
                 })}
             </ul>
@@ -18,15 +18,13 @@ function OnDeck(props: OnDeckProps) {
     )
 }
 
-
-function OnDeckMapping() {
+function OnDeckMapping(onDeckArray: Array<string>) {
     var obj = clientAllocations.clientAllocations
-    var onDeckEmployeeArray: Array<string> = []
 
     obj.forEach(element => {
-        if (element.clientName == "On Deck") { onDeckEmployeeArray.push(element.employeeName) }
+        if (element.clientName == "On Deck") { onDeckArray.push(element.employeeName) }
     });
-    return onDeckEmployeeArray;
+    return onDeckArray;
 }
 
 OnDeck.displayName = "OnDeck";
