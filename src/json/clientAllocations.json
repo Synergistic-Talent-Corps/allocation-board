@@ -54,5 +54,13 @@
             "clientStartDate": "02-01-2019",
             "clientEndDate": ""
         }
+    ],
+    "clients": [
+        {
+            "name": "Delta Dental"
+        },
+        {
+            "name": "Carnival Cruise"
+        }
     ]
 }
