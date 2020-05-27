@@ -41,15 +41,33 @@ body{
 
 .clientblock{
     float: left;
-    width: 150px;
-    border: 1px solid #ccc;
+    width: 200px;
+    border: 2px solid #ccc;
     padding: 10px;
-    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px gray;
+    box-sizing: border-box;    
 }
 
 .clientblock ul{
     padding: 0;
     list-style: none;
+    width: 150px;
+}
+
+.clientblock li{
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset -2px -3px 3px rgba(0,0,0,0.5); 
 }
 
 .clientblock a{
@@ -57,9 +75,11 @@ body{
 }
 
 .ondeck{
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px gray;
 }
 
 .ondeck ul{
@@ -69,6 +89,15 @@ body{
 
 .ondeck li{
     display: inline;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset -2px -3px 3px rgba(0,0,0,0.5); 
 }
 
 .ondeck a{
