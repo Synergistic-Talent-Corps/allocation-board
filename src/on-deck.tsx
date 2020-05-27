@@ -10,8 +10,8 @@ function OnDeck() {
         <div className="ondeck">
             <p>On-Deck</p>
             <ul>
-                {onDeckArray.map((value, index) => {
-                    return <li key={index} style={{ color: value }}><a href="consultant.html">{value}</a></li>
+                {onDeckArray.map((employeeName, index) => {
+                    return <li key={index}><a href="consultant.html">{employeeName}</a></li>
                 })}
             </ul>
         </div>

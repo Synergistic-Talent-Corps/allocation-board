@@ -1,7 +1,6 @@
 // from a terminal
 // npm run build
 
-
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Header } from './header';
@@ -16,6 +15,7 @@ let clientArray: Array<string> = [];
 
 function ClientMapping(clientArray: Array<string>) {
     var obj = clientAllocations.clients
+
     obj.forEach(element => {
         if (element.name != "On Deck") { clientArray.push(element.name) }
     });
@@ -29,7 +29,7 @@ ReactDom.render(
         <Header text="tap|QA Allocation Board" />
         <Navbar />
         {clientArray.map((clientName, index) => (
-            <ClientBlock clientName={clientName}></ClientBlock>
+            <ClientBlock clientName={clientName} />
         ))}
         <ClearFloat />
         <OnDeck />

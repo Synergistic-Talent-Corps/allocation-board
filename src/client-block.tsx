@@ -1,22 +1,28 @@
 import * as React from 'react';
 import * as clientAllocations from './json/clientAllocations.json'
+import { CSSProperties } from "react";
+
+const myStyles: CSSProperties = {
+  background: 'red'
+}
+
+{/* <div style={myStyles} /> */}
 
 type ClientBlockProps = {
     clientName: string;
 }
-function ClientBlock(props: ClientBlockProps) {
-    let clientArray: Array<string> = [];
-    let allocationArray: Array<string> = [];
 
+function ClientBlock(props: ClientBlockProps) {
+    let allocationArray: Array<string> = [];
 
     clientAllocationMapping(props.clientName, allocationArray)
 
     return (
         <div className="clientblock">
-            <a href="client.html">{props.clientName}</a>
+            <h2><a href="client.html">{props.clientName}</a></h2>
             <ul>
-                {allocationArray.map((value, index) => {
-                    return <li key={index} style={{ color: value }}><a href="consultant.html">{value}</a></li>
+                {allocationArray.map((employeeName, index) => {
+                    return <li key={index} style = {myStyles}><a href="consultant.html">{employeeName}</a></li>
                 })}
             </ul>
         </div>
