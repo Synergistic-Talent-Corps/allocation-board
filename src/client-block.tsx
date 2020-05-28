@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as clientAllocations from './json/clientAllocations.json'
 import { CSSProperties } from "react";
 
+
 const myStyles: CSSProperties = {
   background: 'green'
 }
@@ -19,7 +20,7 @@ function ClientBlock(props: ClientBlockProps) {
 
     return (
         <div className="clientblock">
-            <h2><a href="client.html">{props.clientName}</a></h2>
+            <div className="clientblock-header"><a href="client.html">{props.clientName}</a></div>
             <ul>
                 {allocationArray.map((employeeName, index) => {
                     return <li key={index} style = {myStyles}><a href="consultant.html">{employeeName}</a></li>
