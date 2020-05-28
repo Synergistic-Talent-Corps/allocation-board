@@ -3,7 +3,7 @@ import * as clientAllocations from './json/clientAllocations.json'
 import { CSSProperties } from "react";
 
 const myStyles: CSSProperties = {
-  background: 'red'
+  background: 'green'
 }
 
 {/* <div style={myStyles} /> */}

@@ -4,63 +4,554 @@
             "employeeName": "Jeff Meidt",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
-            "clientEndDate": ""
+            "clientEndDate": "",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Tony Pember",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
-            "clientEndDate": ""
+            "clientEndDate": "",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Akila Kovu",
             "clientName": "Delta Dental",
             "clientStartDate": "06-01-2019",
-            "clientEndDate": "06-01-2020"
+            "clientEndDate": "06-01-2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Garret Egge",
             "clientName": "Delta Dental",
             "clientStartDate": "03-01-2019",
-            "clientEndDate": "03-01-2020"
+            "clientEndDate": "03-01-2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Alex Brickner",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2019",
-            "clientEndDate": "06-01-2020"
+            "clientEndDate": "06-01-2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Alexander Helmke",
             "clientName": "Carnival Cruise",
             "clientStartDate": "01-31-2019",
-            "clientEndDate": "03-01-2019"
+            "clientEndDate": "03-01-2019",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "George R R Martin",
             "clientName": "Delta Dental",
             "clientStartDate": "01-01-2019",
-            "clientEndDate": "06-01-2020"
+            "clientEndDate": "06-01-2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Tiffany Diner",
             "clientName": "Delta Dental",
             "clientStartDate": "02-01-2019",
-            "clientEndDate": "02-01-2020"
+            "clientEndDate": "02-01-2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
         },
         {
             "employeeName": "Ismaila Sall",
             "clientName": "Carnival Cruise",
             "clientStartDate": "02-01-2019",
-            "clientEndDate": ""
+            "clientEndDate": "",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": ""
+        },
+        {
+            "employeeName": "Nolan Burgwin",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "11/19/2019",
+            "clientEndDate": "6/26/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Krysta Swanne",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "11/14/2019",
+            "clientEndDate": "2/15/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Virge Comini",
+            "clientName": "Delta Dental",
+            "clientStartDate": "2/5/2020",
+            "clientEndDate": "5/6/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Barry Toope",
+            "clientName": "Beach Body",
+            "clientStartDate": "9/1/2019",
+            "clientEndDate": "11/23/2019",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Rivy Henke",
+            "clientName": "Beach Body",
+            "clientStartDate": "11/18/2019",
+            "clientEndDate": "9/21/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Maure Billyard",
+            "clientName": "Beach Body",
+            "clientStartDate": "2/3/2020",
+            "clientEndDate": "8/30/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Tymothy Simonsson",
+            "clientName": "Health Partners",
+            "clientStartDate": "10/23/2019",
+            "clientEndDate": "12/21/2019",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Benni McCrisken",
+            "clientName": "Beach Body",
+            "clientStartDate": "4/28/2020",
+            "clientEndDate": "10/6/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Major Curlis",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "6/13/2019",
+            "clientEndDate": "12/1/2019",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Cherye Hinchon",
+            "clientName": "Health Partners",
+            "clientStartDate": "10/2/2019",
+            "clientEndDate": "8/26/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Dillon Cow",
+            "clientName": "Health Partners",
+            "clientStartDate": "4/14/2020",
+            "clientEndDate": "8/20/2019",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Benjie Kembry",
+            "clientName": "Health Partners",
+            "clientStartDate": "5/29/2019",
+            "clientEndDate": "10/28/2020",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Cullin Hawton",
+            "clientName": "Delta Dental",
+            "clientStartDate": "9/2/2019",
+            "clientEndDate": "12/27/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Ricoriki Beall",
+            "clientName": "Health Partners",
+            "clientStartDate": "10/14/2019",
+            "clientEndDate": "1/1/2021",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Luelle Stairmond",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "9/30/2019",
+            "clientEndDate": "11/4/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Deva Ornillos",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "2/20/2020",
+            "clientEndDate": "9/13/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Myrlene Vedeniktov",
+            "clientName": "Beach Body",
+            "clientStartDate": "7/28/2019",
+            "clientEndDate": "1/9/2021",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Ezmeralda Nickels",
+            "clientName": "Delta Dental",
+            "clientStartDate": "10/11/2019",
+            "clientEndDate": "7/22/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Stanfield Greder",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "6/13/2019",
+            "clientEndDate": "12/31/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Georgina Donn",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "9/24/2019",
+            "clientEndDate": "4/17/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Joachim Colbert",
+            "clientName": "Health Partners",
+            "clientStartDate": "6/16/2019",
+            "clientEndDate": "3/5/2020",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Adams Friday",
+            "clientName": "Health Partners",
+            "clientStartDate": "4/20/2020",
+            "clientEndDate": "8/24/2020",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Amelie Lidgely",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "3/20/2020",
+            "clientEndDate": "7/21/2019",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Robert Kettle",
+            "clientName": "Delta Dental",
+            "clientStartDate": "3/1/2020",
+            "clientEndDate": "8/31/2019",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Everard Jordine",
+            "clientName": "Delta Dental",
+            "clientStartDate": "11/28/2019",
+            "clientEndDate": "8/26/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Eilis Ussher",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "1/27/2020",
+            "clientEndDate": "1/7/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Tulley Maylin",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "2/1/2020",
+            "clientEndDate": "8/19/2019",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Glyn Ungerer",
+            "clientName": "Beach Body",
+            "clientStartDate": "1/28/2020",
+            "clientEndDate": "10/29/2019",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Lenka Jochanany",
+            "clientName": "Delta Dental",
+            "clientStartDate": "3/21/2020",
+            "clientEndDate": "1/26/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Penelopa Kimpton",
+            "clientName": "Delta Dental",
+            "clientStartDate": "2/19/2020",
+            "clientEndDate": "6/29/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Vasily Esposita",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "11/25/2019",
+            "clientEndDate": "1/17/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Belvia Seabrook",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "8/13/2019",
+            "clientEndDate": "9/28/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Tod Walkden",
+            "clientName": "Beach Body",
+            "clientStartDate": "5/23/2020",
+            "clientEndDate": "1/6/2021",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Cloe Trittam",
+            "clientName": "Delta Dental",
+            "clientStartDate": "1/11/2020",
+            "clientEndDate": "3/1/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Tabb Picken",
+            "clientName": "Health Partners",
+            "clientStartDate": "9/7/2019",
+            "clientEndDate": "1/17/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Allie McIan",
+            "clientName": "Beach Body",
+            "clientStartDate": "9/15/2019",
+            "clientEndDate": "6/2/2020",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Meade Yurasov",
+            "clientName": "Delta Dental",
+            "clientStartDate": "11/11/2019",
+            "clientEndDate": "7/28/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Rudiger Gilmour",
+            "clientName": "Red Wing Shoes",
+            "clientStartDate": "12/5/2019",
+            "clientEndDate": "1/26/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Kelila Daborne",
+            "clientName": "Beach Body",
+            "clientStartDate": "11/12/2019",
+            "clientEndDate": "8/24/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Nevin Easun",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "11/28/2019",
+            "clientEndDate": "7/12/2019",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Aloysia Sidden",
+            "clientName": "Beach Body",
+            "clientStartDate": "1/15/2020",
+            "clientEndDate": "3/20/2020",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Melvin Bisson",
+            "clientName": "Beach Body",
+            "clientStartDate": "12/21/2019",
+            "clientEndDate": "6/4/2019",
+            "teamLead": true,
+            "tentative": true,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Katee Inkpin",
+            "clientName": "Delta Dental",
+            "clientStartDate": "10/31/2019",
+            "clientEndDate": "12/4/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": true
+        },
+        {
+            "employeeName": "Gideon Riding",
+            "clientName": "Delta Dental",
+            "clientStartDate": "8/7/2019",
+            "clientEndDate": "10/13/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Savina Webborn",
+            "clientName": "Delta Dental",
+            "clientStartDate": "11/21/2019",
+            "clientEndDate": "7/14/2019",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Kenyon Wanklin",
+            "clientName": "Beach Body",
+            "clientStartDate": "9/1/2019",
+            "clientEndDate": "2/28/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Quintin Huggens",
+            "clientName": "Beach Body",
+            "clientStartDate": "11/21/2019",
+            "clientEndDate": "10/19/2019",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Diannne Spurdens",
+            "clientName": "Beach Body",
+            "clientStartDate": "1/10/2020",
+            "clientEndDate": "7/25/2019",
+            "teamLead": false,
+            "tentative": true,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Stevana Getty",
+            "clientName": "Delta Dental",
+            "clientStartDate": "11/27/2019",
+            "clientEndDate": "5/2/2020",
+            "teamLead": true,
+            "tentative": false,
+            "splitAllocation": false
+        },
+        {
+            "employeeName": "Lauritz Beaty",
+            "clientName": "Carnival Cruise",
+            "clientStartDate": "5/7/2020",
+            "clientEndDate": "8/12/2020",
+            "teamLead": false,
+            "tentative": false,
+            "splitAllocation": true
         }
     ],
     "clients": [
         {
-            "name": "Delta Dental"
+            "name": "Delta Dental",
+            "pointOfContact": ""
         },
         {
-            "name": "Carnival Cruise"
+            "name": "Carnival Cruise",
+            "pointOfContact": ""
+        },
+        {
+            "name": "Health Partners",
+            "pointOfContact": ""
+        },
+        {
+            "name": "Beach Body",
+            "pointOfContact": ""
+        },
+        {
+            "name": "Red Wing Shoes",
+            "pointOfContact": ""
         }
     ]
 }
