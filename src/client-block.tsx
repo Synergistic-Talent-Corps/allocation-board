@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as clientAllocations from './json/clientAllocations.json'
 import { CSSProperties } from "react";
-import { stringify } from 'querystring';
 
 type ClientBlockProps = {
     clientName: string;
