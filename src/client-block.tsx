@@ -22,8 +22,6 @@ function ClientBlock(props: ClientBlockProps) {
     // load the array of consultants under the client
     clientAllocationMapping(props.clientName, allocationArray)
 
-    console.log(props.clientName);
-
     return (
         <div className="clientblock">
             <h3><a href="client.html">{props.clientName}</a></h3>
@@ -69,10 +67,9 @@ function consultantCloseToEndDate(clientName: string, employeeName: string): str
         if (element.clientName == clientName) {
             if (element.employeeName == employeeName) {
                 endDate = new Date(element.clientEndDate);
-                console.log("end date = >" + element.clientEndDate + "<")
                 if (element.clientEndDate == "") {
                     returnColor = "#76ee00"; //end date is blank, so leave returnColor set to green
-                } else {((+endDate - 2629746000) < +currentDate) // end date - milliseconds in a month
+                } else if ((+endDate - 2629746000) < +currentDate) { // end date - milliseconds in a month
                     returnColor = "red";
                 };
             };
