@@ -37,7 +37,7 @@ function ClientBlock(props: ClientBlockProps) {
                         return <li key={index} style = {myStyleRed}><a href="consultant.html">{employeeName}</a></li>
                     } else {
                         return <li key={index} style = {myStyleGreen}><a href="consultant.html">{employeeName}</a></li>
-                    }
+                    };
                 })}
             </ul>
         </div>
@@ -64,13 +64,16 @@ function consultantCloseToEndDate(clientName: string, employeeName: string): str
     var obj = clientAllocations.clientAllocations
     let currentDate: Date = new Date();
     let endDate: Date = new Date();
-    let returnColor: string = "green";
+    let returnColor: string = "#76ee00";
     
     obj.forEach(element => {
         if (element.clientName == clientName) {
             if (element.employeeName == employeeName) {
                 endDate = new Date(element.clientEndDate);
-                if((+endDate - 2629746000) < +currentDate) { // end date - milliseconds in a month
+                console.log("end date = >" + element.clientEndDate + "<")
+                if (element.clientEndDate == "") {
+                    returnColor = "#76ee00"; //end date is blank, so leave returnColor set to green
+                } else {((+endDate - 2629746000) < +currentDate) // end date - milliseconds in a month
                     returnColor = "red";
                 };
             };
