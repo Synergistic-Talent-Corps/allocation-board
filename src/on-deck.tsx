@@ -8,7 +8,7 @@ function OnDeck() {
  
     return (
         <div className="ondeck">
-            <p>On-Deck</p>
+            <p>On Deck</p>
             <ul>
                 {onDeckArray.map((employeeName, index) => {
                     return <li key={index}><a href="consultant.html">{employeeName}</a></li>
