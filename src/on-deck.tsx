@@ -1,7 +1,13 @@
 import * as React from 'react';
 import * as clientAllocations from './json/clientAllocations.json'
 
-function OnDeck() {
+type OnDeckProps = {
+    onPageChange: Function;
+    onClientChange: Function;
+    onConsultantChange: Function;
+}
+
+function OnDeck(props: OnDeckProps) {
     let onDeckArray: Array<string> = [];
 
     OnDeckMapping(onDeckArray);
@@ -10,8 +16,8 @@ function OnDeck() {
         <div className="ondeck">
             <p>On Deck</p>
             <ul>
-                {onDeckArray.map((employeeName, index) => {
-                    return <li key={index}><a href="consultant.html">{employeeName}</a></li>
+                {onDeckArray.map((consultantName, index) => {
+                    return <li key={index}><button onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(consultantName)}}>{consultantName}</button></li>
                 })}
             </ul>
         </div>
