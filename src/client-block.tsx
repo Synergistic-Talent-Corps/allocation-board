@@ -4,9 +4,13 @@ import { CSSProperties } from "react";
 
 type ClientBlockProps = {
     clientName: string;
+    onPageChange: Function;
+    onClientChange: Function;
+    onConsultantChange: Function;
 }
 
 function ClientBlock(props: ClientBlockProps) {
+
     let myStyleRed: CSSProperties = {
         background: 'red'
     }
@@ -24,16 +28,16 @@ function ClientBlock(props: ClientBlockProps) {
 
     return (
         <div className="clientblock">
-            <h3><a href="client.html">{props.clientName}</a></h3>
+            <h3><button onClick={() => {props.onPageChange('Client Information'); props.onClientChange(props.clientName)}}>{props.clientName}</button></h3>
             <ul>
-                {allocationArray.map((employeeName, index) => {
+                {allocationArray.map((consultantName, index) => {
                     
-                    backgroundColor = consultantCloseToEndDate(props.clientName, employeeName);
+                    backgroundColor = consultantCloseToEndDate(props.clientName, consultantName);
 
                     if (backgroundColor == "red") {
-                        return <li key={index} style = {myStyleRed}><a href="consultant.html">{employeeName}</a></li>
+                        return <li key={index} style = {myStyleRed}><button style = {myStyleRed} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(consultantName)}}>{consultantName}</button></li>
                     } else {
-                        return <li key={index} style = {myStyleGreen}><a href="consultant.html">{employeeName}</a></li>
+                        return <li key={index} style = {myStyleGreen}><button style = {myStyleGreen} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(consultantName)}}>{consultantName}</button></li>
                     };
                 })}
             </ul>
@@ -41,6 +45,7 @@ function ClientBlock(props: ClientBlockProps) {
     )
 }
 
+// build a list of consultants under the client
 function clientAllocationMapping(Client: string, allocationArray: Array<string> ) {
     var obj = clientAllocations.clientAllocations
 
@@ -53,11 +58,8 @@ function clientAllocationMapping(Client: string, allocationArray: Array<string> 
     return allocationArray
 }
 
-function returnString () : string {
-    return "red";
-}
-
-function consultantCloseToEndDate(clientName: string, employeeName: string): string {
+// check the end date for the consultant and return red if they are < 30 days from end date
+function consultantCloseToEndDate(clientName: string, consultantName: string): string {
     var obj = clientAllocations.clientAllocations
     let currentDate: Date = new Date();
     let endDate: Date = new Date();
@@ -65,7 +67,7 @@ function consultantCloseToEndDate(clientName: string, employeeName: string): str
     
     obj.forEach(element => {
         if (element.clientName == clientName) {
-            if (element.employeeName == employeeName) {
+            if (element.employeeName == consultantName) {
                 endDate = new Date(element.clientEndDate);
                 if (element.clientEndDate == "") {
                     returnColor = "#76ee00"; //end date is blank, so leave returnColor set to green
