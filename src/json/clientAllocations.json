@@ -7,7 +7,7 @@
             "clientEndDate": "",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": false
         },
         {
             "employeeName": "Tony Pember",
@@ -16,7 +16,7 @@
             "clientEndDate": "",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": false
         },
         {
             "employeeName": "Akila Kovu",
@@ -25,16 +25,7 @@
             "clientEndDate": "06-01-2020",
             "teamLead": true,
             "tentative": false,
-            "splitAllocation": ""
-        },
-        {
-            "employeeName": "Garret Egge",
-            "clientName": "Delta Dental",
-            "clientStartDate": "03-01-2019",
-            "clientEndDate": "03-01-2020",
-            "teamLead": false,
-            "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": false
         },
         {
             "employeeName": "Alex Brickner",
@@ -43,7 +34,7 @@
             "clientEndDate": "06-01-2020",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": false
         },
         {
             "employeeName": "Alexander Helmke",
@@ -52,25 +43,7 @@
             "clientEndDate": "03-01-2019",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": ""
-        },
-        {
-            "employeeName": "George R R Martin",
-            "clientName": "Delta Dental",
-            "clientStartDate": "01-01-2019",
-            "clientEndDate": "06-01-2020",
-            "teamLead": false,
-            "tentative": false,
-            "splitAllocation": ""
-        },
-        {
-            "employeeName": "Tiffany Diner",
-            "clientName": "Delta Dental",
-            "clientStartDate": "02-01-2019",
-            "clientEndDate": "02-01-2020",
-            "teamLead": false,
-            "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": false
         },
         {
             "employeeName": "Ismaila Sall",
@@ -79,7 +52,7 @@
             "clientEndDate": "",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": false
         },
         {
             "employeeName": "Nolan Burgwin",
@@ -103,9 +76,9 @@
             "employeeName": "Virge Comini",
             "clientName": "Delta Dental",
             "clientStartDate": "2/5/2020",
-            "clientEndDate": "5/6/2020",
+            "clientEndDate": "8/6/2020",
             "teamLead": false,
-            "tentative": true,
+            "tentative": false,
             "splitAllocation": true
         },
         {
@@ -193,9 +166,9 @@
             "employeeName": "Cullin Hawton",
             "clientName": "Delta Dental",
             "clientStartDate": "9/2/2019",
-            "clientEndDate": "12/27/2019",
+            "clientEndDate": "12/27/2021",
             "teamLead": true,
-            "tentative": true,
+            "tentative": false,
             "splitAllocation": true
         },
         {
@@ -204,7 +177,7 @@
             "clientStartDate": "10/14/2019",
             "clientEndDate": "1/1/2021",
             "teamLead": false,
-            "tentative": true,
+            "tentative": false,
             "splitAllocation": true
         },
         {
@@ -343,21 +316,12 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Penelopa Kimpton",
-            "clientName": "Delta Dental",
-            "clientStartDate": "2/19/2020",
-            "clientEndDate": "6/29/2020",
-            "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
-        },
-        {
             "employeeName": "Vasily Esposita",
             "clientName": "Carnival Cruise",
             "clientStartDate": "11/25/2019",
             "clientEndDate": "1/17/2020",
             "teamLead": false,
-            "tentative": true,
+            "tentative": false,
             "splitAllocation": true
         },
         {
@@ -406,30 +370,12 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Meade Yurasov",
-            "clientName": "Delta Dental",
-            "clientStartDate": "11/11/2019",
-            "clientEndDate": "7/28/2019",
-            "teamLead": true,
-            "tentative": true,
-            "splitAllocation": false
-        },
-        {
             "employeeName": "Rudiger Gilmour",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "12/5/2019",
             "clientEndDate": "1/26/2020",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": false
-        },
-        {
-            "employeeName": "Kelila Daborne",
-            "clientName": "Beach Body",
-            "clientStartDate": "11/12/2019",
-            "clientEndDate": "8/24/2020",
-            "teamLead": false,
-            "tentative": true,
             "splitAllocation": false
         },
         {
@@ -447,15 +393,6 @@
             "clientStartDate": "1/15/2020",
             "clientEndDate": "3/20/2020",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": true
-        },
-        {
-            "employeeName": "Melvin Bisson",
-            "clientName": "Beach Body",
-            "clientStartDate": "12/21/2019",
-            "clientEndDate": "6/4/2019",
-            "teamLead": true,
             "tentative": true,
             "splitAllocation": true
         },
@@ -478,28 +415,10 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Savina Webborn",
-            "clientName": "Delta Dental",
-            "clientStartDate": "11/21/2019",
-            "clientEndDate": "7/14/2019",
-            "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
-        },
-        {
             "employeeName": "Kenyon Wanklin",
             "clientName": "Beach Body",
             "clientStartDate": "9/1/2019",
             "clientEndDate": "2/28/2020",
-            "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
-        },
-        {
-            "employeeName": "Quintin Huggens",
-            "clientName": "Beach Body",
-            "clientStartDate": "11/21/2019",
-            "clientEndDate": "10/19/2019",
             "teamLead": true,
             "tentative": false,
             "splitAllocation": false
