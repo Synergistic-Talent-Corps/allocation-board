@@ -42,7 +42,6 @@ function App () {
             {currentPage === 'Allocation Board' && <OnDeck onPageChange={(value:string) => setCurrentPage(value)}  onClientChange={(value:string) => setCurrentClient(value)} onConsultantChange={(value:string) => setCurrentConsultant(value)}/>}
             {currentPage === 'Client Information' && <ClientInformation onPageChange={(value:string) => setCurrentPage(value)} clientName={currentClient} />}
             {currentPage === 'Consultant Information' && <ConsultantInformation onPageChange={(value:string) => setCurrentPage(value)} consultantName={currentConsultant} />}
-            {console.log(currentPage)}
         </div>
     )
 }
