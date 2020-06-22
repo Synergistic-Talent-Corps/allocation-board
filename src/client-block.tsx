@@ -47,10 +47,12 @@ function consultantCloseToEndDate(clientEndDate: string): string {
     
     if (clientEndDate == "") {
         returnColor = "#76ee00"; //end date is blank, so leave returnColor set to green
-    } else if ((+endDate - 2629746000) < +currentDate) { // end date - milliseconds in a month
+    } else if ((+endDate) < +currentDate) {
         returnColor = "red";
+    } else if ((+endDate - 2629746000) < +currentDate) { // end date - milliseconds in a month
+        returnColor = "yellow";
     }
-
+    
     return returnColor; 
 }
 
@@ -64,6 +66,9 @@ function ClientBlock(props: ClientBlockProps) {
     }
     let myStyleOrange: CSSProperties = {
         background: 'orange'
+    }
+    let myStyleYellow: CSSProperties = {
+        background: 'yellow'
     }
 
     let backgroundColor: string = "";
@@ -86,6 +91,8 @@ function ClientBlock(props: ClientBlockProps) {
                     return <li key={index} style = {myStyleOrange}><button style = {myStyleOrange} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
                 } else if (backgroundColor == "#76ee00") {
                     return <li key={index} style = {myStyleGreen}><button style = {myStyleGreen} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
+                } else if (backgroundColor == "yellow") {
+                    return <li key={index} style = {myStyleYellow}><button style = {myStyleYellow} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
                 } else if (backgroundColor == "red") {
                     return <li key={index} style = {myStyleRed}><button style = {myStyleRed} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
             }})}
