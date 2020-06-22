@@ -265,9 +265,9 @@
             "employeeName": "Robert Kettle",
             "clientName": "Delta Dental",
             "clientStartDate": "3/1/2020",
-            "clientEndDate": "8/31/2019",
+            "clientEndDate": "7/4/2020",
             "teamLead": false,
-            "tentative": true,
+            "tentative": false,
             "splitAllocation": true
         },
         {
