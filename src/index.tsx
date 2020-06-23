@@ -21,7 +21,7 @@ function ClientMapping(clientArray: Array<string>) {
     var obj = clientAllocations.clients
 
     obj.forEach(element => {
-        if (element.name != "On Deck") { clientArray.push(element.name) }
+        if (element.clientName != "On Deck") { clientArray.push(element.clientName) }
     });
     return clientArray;
 }

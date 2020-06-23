@@ -22,12 +22,12 @@ interface Allocation {
 
 // build a list of Allocations under the client
 function clientAllocationMapping(Client: string, allocationArray2: Array<Allocation> ) {
-    var obj = clientAllocations.clientAllocations
+    var obj = clientAllocations.clientAllocations;
 
     obj.forEach(element => {
         if (element.clientName == Client) {
             let consultantAllocation = {} as Allocation;
-            consultantAllocation.consultantName = element.employeeName;
+            consultantAllocation.consultantName = element.consultantName;
             consultantAllocation.clientName = element.clientName;
             consultantAllocation.clientStartDate = element.clientStartDate;
             consultantAllocation.clientEndDate = element.clientEndDate;

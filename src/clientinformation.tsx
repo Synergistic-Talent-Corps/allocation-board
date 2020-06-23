@@ -1,24 +1,52 @@
 import * as React from 'react';
+import * as clientAllocations from './json/clientAllocations.json'
 
 type ClientInformationProps = {
     onPageChange: Function;
     clientName: string;
 }
 
+// object to store client information from the json
+interface ClientInfo {
+    clientName: string,
+    phoneNumber: string,
+    address: string,
+    email: string,
+    pointOfContact: string
+}
+
+// get the client information
+function getClientInfo(Client: string, clientInfo: ClientInfo) {
+    var obj = clientAllocations.clients;
+
+    obj.forEach(element => {
+        if (element.clientName == Client) {
+            clientInfo.clientName = element.clientName;
+            clientInfo.phoneNumber = element.phoneNumber;
+            clientInfo.address = element.address;
+            clientInfo.email = element.email;
+            clientInfo.pointOfContact = element.pointOfContact;
+        }
+    })
+}
+
 function ClientInformation(props: ClientInformationProps) {
+    var obj = clientAllocations.clients
+    let clientInfo = {} as ClientInfo;
+
+    getClientInfo(props.clientName, clientInfo);
 
     return (
-
         <form className="my-form">
             <button type="button" onClick={() => props.onPageChange('Allocation Board')}>Back</button>
             <div className="form-group" >
 
                 <input type="text" name="company_name" placeholder ={props.clientName} />
-                <input type="text" name="phone_number" placeholder ="Phone Number" />
+                <input type="text" name="phone_number" placeholder ={clientInfo.phoneNumber} />
                 <br />
                 <br />
-                <input type="text" name="physical_address" placeholder ="Physical Address" />
-                <input type="text" name="email_address" placeholder ="Email Address" />
+                <input type="text" name="physical_address" placeholder ={clientInfo.address} />
+                <input type="text" name="email_address" placeholder ={clientInfo.email} />
                 <br />
                 <br />
                 {/* <!-- Write your comments here --> */}

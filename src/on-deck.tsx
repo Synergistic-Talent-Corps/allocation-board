@@ -7,6 +7,15 @@ type OnDeckProps = {
     onConsultantChange: Function;
 }
 
+function OnDeckMapping(onDeckArray: Array<string>) {
+    var obj = clientAllocations.clientAllocations
+
+    obj.forEach(element => {
+        if (element.clientName == "On Deck") { onDeckArray.push(element.consultantName) }
+    });
+    return onDeckArray;
+}
+
 function OnDeck(props: OnDeckProps) {
     let onDeckArray: Array<string> = [];
 
@@ -22,15 +31,6 @@ function OnDeck(props: OnDeckProps) {
             </ul>
         </div>
     )
-}
-
-function OnDeckMapping(onDeckArray: Array<string>) {
-    var obj = clientAllocations.clientAllocations
-
-    obj.forEach(element => {
-        if (element.clientName == "On Deck") { onDeckArray.push(element.employeeName) }
-    });
-    return onDeckArray;
 }
 
 OnDeck.displayName = "OnDeck";

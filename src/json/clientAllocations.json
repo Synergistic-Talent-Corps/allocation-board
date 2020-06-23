@@ -1,7 +1,7 @@
 {
     "clientAllocations": [
         {
-            "employeeName": "Jeff Meidt",
+            "consultantName": "Jeff Meidt",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
             "clientEndDate": "",
@@ -10,7 +10,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Tony Pember",
+            "consultantName": "Tony Pember",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
             "clientEndDate": "",
@@ -19,7 +19,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Akila Kovu",
+            "consultantName": "Akila Kovu",
             "clientName": "Delta Dental",
             "clientStartDate": "06-01-2019",
             "clientEndDate": "06-01-2020",
@@ -28,7 +28,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Alex Brickner",
+            "consultantName": "Alex Brickner",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2019",
             "clientEndDate": "06-01-2020",
@@ -37,7 +37,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Alexander Helmke",
+            "consultantName": "Alexander Helmke",
             "clientName": "Carnival Cruise",
             "clientStartDate": "01-31-2019",
             "clientEndDate": "03-01-2019",
@@ -46,7 +46,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Ismaila Sall",
+            "consultantName": "Ismaila Sall",
             "clientName": "Carnival Cruise",
             "clientStartDate": "02-01-2019",
             "clientEndDate": "",
@@ -55,7 +55,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Nolan Burgwin",
+            "consultantName": "Nolan Burgwin",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "11/19/2019",
             "clientEndDate": "6/26/2019",
@@ -64,7 +64,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Krysta Swanne",
+            "consultantName": "Krysta Swanne",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "11/14/2019",
             "clientEndDate": "2/15/2020",
@@ -73,7 +73,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Virge Comini",
+            "consultantName": "Virge Comini",
             "clientName": "Delta Dental",
             "clientStartDate": "2/5/2020",
             "clientEndDate": "8/6/2020",
@@ -82,7 +82,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Barry Toope",
+            "consultantName": "Barry Toope",
             "clientName": "Beach Body",
             "clientStartDate": "9/1/2019",
             "clientEndDate": "11/23/2019",
@@ -91,7 +91,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Rivy Henke",
+            "consultantName": "Rivy Henke",
             "clientName": "Beach Body",
             "clientStartDate": "11/18/2019",
             "clientEndDate": "9/21/2020",
@@ -100,7 +100,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Maure Billyard",
+            "consultantName": "Maure Billyard",
             "clientName": "Beach Body",
             "clientStartDate": "2/3/2020",
             "clientEndDate": "8/30/2020",
@@ -109,7 +109,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Tymothy Simonsson",
+            "consultantName": "Tymothy Simonsson",
             "clientName": "Health Partners",
             "clientStartDate": "10/23/2019",
             "clientEndDate": "12/21/2019",
@@ -118,7 +118,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Benni McCrisken",
+            "consultantName": "Benni McCrisken",
             "clientName": "Beach Body",
             "clientStartDate": "4/28/2020",
             "clientEndDate": "10/6/2019",
@@ -127,7 +127,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Major Curlis",
+            "consultantName": "Major Curlis",
             "clientName": "Carnival Cruise",
             "clientStartDate": "6/13/2019",
             "clientEndDate": "12/1/2019",
@@ -136,7 +136,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Cherye Hinchon",
+            "consultantName": "Cherye Hinchon",
             "clientName": "Health Partners",
             "clientStartDate": "10/2/2019",
             "clientEndDate": "8/26/2020",
@@ -145,7 +145,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Dillon Cow",
+            "consultantName": "Dillon Cow",
             "clientName": "Health Partners",
             "clientStartDate": "4/14/2020",
             "clientEndDate": "8/20/2019",
@@ -154,7 +154,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Benjie Kembry",
+            "consultantName": "Benjie Kembry",
             "clientName": "Health Partners",
             "clientStartDate": "5/29/2019",
             "clientEndDate": "10/28/2020",
@@ -163,7 +163,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Cullin Hawton",
+            "consultantName": "Cullin Hawton",
             "clientName": "Delta Dental",
             "clientStartDate": "9/2/2019",
             "clientEndDate": "12/27/2021",
@@ -172,7 +172,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Ricoriki Beall",
+            "consultantName": "Ricoriki Beall",
             "clientName": "Health Partners",
             "clientStartDate": "10/14/2019",
             "clientEndDate": "1/1/2021",
@@ -181,7 +181,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Luelle Stairmond",
+            "consultantName": "Luelle Stairmond",
             "clientName": "Carnival Cruise",
             "clientStartDate": "9/30/2019",
             "clientEndDate": "11/4/2020",
@@ -190,7 +190,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Deva Ornillos",
+            "consultantName": "Deva Ornillos",
             "clientName": "Carnival Cruise",
             "clientStartDate": "2/20/2020",
             "clientEndDate": "9/13/2019",
@@ -199,7 +199,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Myrlene Vedeniktov",
+            "consultantName": "Myrlene Vedeniktov",
             "clientName": "Beach Body",
             "clientStartDate": "7/28/2019",
             "clientEndDate": "1/9/2021",
@@ -208,7 +208,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Ezmeralda Nickels",
+            "consultantName": "Ezmeralda Nickels",
             "clientName": "Delta Dental",
             "clientStartDate": "10/11/2019",
             "clientEndDate": "7/22/2020",
@@ -217,7 +217,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Stanfield Greder",
+            "consultantName": "Stanfield Greder",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "6/13/2019",
             "clientEndDate": "12/31/2020",
@@ -226,7 +226,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Georgina Donn",
+            "consultantName": "Georgina Donn",
             "clientName": "Carnival Cruise",
             "clientStartDate": "9/24/2019",
             "clientEndDate": "4/17/2020",
@@ -235,7 +235,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Joachim Colbert",
+            "consultantName": "Joachim Colbert",
             "clientName": "Health Partners",
             "clientStartDate": "6/16/2019",
             "clientEndDate": "3/5/2020",
@@ -244,7 +244,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Adams Friday",
+            "consultantName": "Adams Friday",
             "clientName": "Health Partners",
             "clientStartDate": "4/20/2020",
             "clientEndDate": "8/24/2020",
@@ -253,7 +253,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Amelie Lidgely",
+            "consultantName": "Amelie Lidgely",
             "clientName": "Carnival Cruise",
             "clientStartDate": "3/20/2020",
             "clientEndDate": "7/21/2019",
@@ -262,7 +262,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Robert Kettle",
+            "consultantName": "Robert Kettle",
             "clientName": "Delta Dental",
             "clientStartDate": "3/1/2020",
             "clientEndDate": "7/4/2020",
@@ -271,7 +271,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Everard Jordine",
+            "consultantName": "Everard Jordine",
             "clientName": "Delta Dental",
             "clientStartDate": "11/28/2019",
             "clientEndDate": "8/26/2019",
@@ -280,7 +280,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Eilis Ussher",
+            "consultantName": "Eilis Ussher",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "1/27/2020",
             "clientEndDate": "1/7/2020",
@@ -289,7 +289,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Tulley Maylin",
+            "consultantName": "Tulley Maylin",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "2/1/2020",
             "clientEndDate": "8/19/2019",
@@ -298,7 +298,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Glyn Ungerer",
+            "consultantName": "Glyn Ungerer",
             "clientName": "Beach Body",
             "clientStartDate": "1/28/2020",
             "clientEndDate": "10/29/2019",
@@ -307,7 +307,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Lenka Jochanany",
+            "consultantName": "Lenka Jochanany",
             "clientName": "Delta Dental",
             "clientStartDate": "3/21/2020",
             "clientEndDate": "1/26/2020",
@@ -316,7 +316,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Vasily Esposita",
+            "consultantName": "Vasily Esposita",
             "clientName": "Carnival Cruise",
             "clientStartDate": "11/25/2019",
             "clientEndDate": "1/17/2020",
@@ -325,7 +325,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Belvia Seabrook",
+            "consultantName": "Belvia Seabrook",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "8/13/2019",
             "clientEndDate": "9/28/2020",
@@ -334,7 +334,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Tod Walkden",
+            "consultantName": "Tod Walkden",
             "clientName": "Beach Body",
             "clientStartDate": "5/23/2020",
             "clientEndDate": "1/6/2021",
@@ -343,7 +343,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Cloe Trittam",
+            "consultantName": "Cloe Trittam",
             "clientName": "Delta Dental",
             "clientStartDate": "1/11/2020",
             "clientEndDate": "3/1/2020",
@@ -352,7 +352,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Tabb Picken",
+            "consultantName": "Tabb Picken",
             "clientName": "Health Partners",
             "clientStartDate": "9/7/2019",
             "clientEndDate": "1/17/2020",
@@ -361,7 +361,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Allie McIan",
+            "consultantName": "Allie McIan",
             "clientName": "Beach Body",
             "clientStartDate": "9/15/2019",
             "clientEndDate": "6/2/2020",
@@ -370,7 +370,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Rudiger Gilmour",
+            "consultantName": "Rudiger Gilmour",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "12/5/2019",
             "clientEndDate": "1/26/2020",
@@ -379,7 +379,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Nevin Easun",
+            "consultantName": "Nevin Easun",
             "clientName": "Carnival Cruise",
             "clientStartDate": "11/28/2019",
             "clientEndDate": "7/12/2019",
@@ -388,7 +388,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Aloysia Sidden",
+            "consultantName": "Aloysia Sidden",
             "clientName": "Beach Body",
             "clientStartDate": "1/15/2020",
             "clientEndDate": "3/20/2020",
@@ -397,7 +397,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Katee Inkpin",
+            "consultantName": "Katee Inkpin",
             "clientName": "Delta Dental",
             "clientStartDate": "10/31/2019",
             "clientEndDate": "12/4/2020",
@@ -406,7 +406,7 @@
             "splitAllocation": true
         },
         {
-            "employeeName": "Gideon Riding",
+            "consultantName": "Gideon Riding",
             "clientName": "Delta Dental",
             "clientStartDate": "8/7/2019",
             "clientEndDate": "10/13/2020",
@@ -415,7 +415,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Kenyon Wanklin",
+            "consultantName": "Kenyon Wanklin",
             "clientName": "Beach Body",
             "clientStartDate": "9/1/2019",
             "clientEndDate": "2/28/2020",
@@ -424,7 +424,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Diannne Spurdens",
+            "consultantName": "Diannne Spurdens",
             "clientName": "Beach Body",
             "clientStartDate": "1/10/2020",
             "clientEndDate": "7/25/2019",
@@ -433,7 +433,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Stevana Getty",
+            "consultantName": "Stevana Getty",
             "clientName": "Delta Dental",
             "clientStartDate": "11/27/2019",
             "clientEndDate": "5/2/2020",
@@ -442,7 +442,7 @@
             "splitAllocation": false
         },
         {
-            "employeeName": "Lauritz Beaty",
+            "consultantName": "Lauritz Beaty",
             "clientName": "Carnival Cruise",
             "clientStartDate": "5/7/2020",
             "clientEndDate": "8/12/2020",
@@ -453,24 +453,291 @@
     ],
     "clients": [
         {
-            "name": "Delta Dental",
+            "clientName": "Delta Dental",
+            "phoneNumber": "612-555-1212",
+            "address": "555 Main St Paul, MN 55443",
+            "email": "deltadental@abc.com",
             "pointOfContact": ""
         },
         {
-            "name": "Carnival Cruise",
+            "clientName": "Carnival Cruise",
+            "phoneNumber": "612-555-1213",
+            "address": "556 Main St Paul, MN 55443",
+            "email": "carnivalcruise@abc.com",
             "pointOfContact": ""
         },
         {
-            "name": "Health Partners",
+            "clientName": "Health Partners",
+            "phoneNumber": "612-555-1214",
+            "address": "557 Main St Paul, MN 55443",
+            "email": "healthpartners@abc.com",
             "pointOfContact": ""
         },
         {
-            "name": "Beach Body",
+            "clientName": "Beach Body",
+            "phoneNumber": "612-555-1215",
+            "address": "558 Main St Paul, MN 55443",
+            "email": "beachbody@abc.com",
             "pointOfContact": ""
         },
         {
-            "name": "Red Wing Shoes",
+            "clientName": "Red Wing Shoes",
+            "phoneNumber": "612-555-1216",
+            "address": "559 Main St Paul, MN 55443",
+            "email": "redwingshoes@abc.com",
             "pointOfContact": ""
         }
-    ]
+    ],
+        "consultants": [
+            {
+                "consultantName": "Jeff Meidt",
+                "title": "QA Analyst",
+                "email": "jmeidt@abc.com"
+            },
+            {
+                "consultantName": "Tony Pember",
+                "title": "QA Analyst",
+                "email": "tpember@abc.com"
+            },
+            {
+                "consultantName": "Akila Kovu",
+                "title": "QA Analyst",
+                "email": "akovu@abc.com"
+            },
+            {
+                "consultantName": "Alex Brickner",
+                "title": "QA Analyst",
+                "email": "abrickner@abc.com"
+            },
+            {
+                "consultantName": "Alexander Helmke",
+                "title": "QA Analyst",
+                "email": "ahelnke@abc.com"
+            },
+            {
+                "consultantName": "Ismaila Sall",
+                "title": "QA Analyst",
+                "email": "isall@abc.com"
+            },
+            {
+                "consultantName": "Nolan Burgwin",
+                "title": "QA Analyst",
+                "email": "nburgwin@abc.com"
+            },
+            {
+                "consultantName": "Krysta Swanne",
+                "title": "QA Analyst",
+                "email": "kswane@abc.com"
+            },
+            {
+                "consultantName": "Virge Comini",
+                "title": "QA Analyst",
+                "email": "vcomini@abc.com"
+            },
+            {
+                "consultantName": "Barry Toope",
+                "title": "QA Analyst",
+                "email": "btoope@abc.com"
+            },
+            {
+                "consultantName": "Rivy Henke",
+                "title": "QA Analyst",
+                "email": "rhenke@abc.com"
+            },
+            {
+                "consultantName": "Maure Billyard",
+                "title": "QA Analyst",
+                "email": "mbillyard@abc.com"
+            },
+            {
+                "consultantName": "Tymothy Simonsson",
+                "title": "QA Analyst",
+                "email": "tsimonsson@abc.com"
+            },
+            {
+                "consultantName": "Benni McCrisken",
+                "title": "QA Analyst",
+                "email": "bmccrosken@abc.com"
+            },
+            {
+                "consultantName": "Major Curlis",
+                "title": "QA Analyst",
+                "email": "mcurlis@abc.com"
+            },
+            {
+                "consultantName": "Cherye Hinchon",
+                "title": "QA Analyst",
+                "email": "chinchon@abc.com"
+            },
+            {
+                "consultantName": "Dillon Cow",
+                "title": "QA Analyst",
+                "email": "dcow@abc.com"
+            },
+            {
+                "consultantName": "Benjie Kembry",
+                "title": "QA Analyst",
+                "email": "bkembry@abc.com"
+            },
+            {
+                "consultantName": "Cullin Hawton",
+                "title": "QA Analyst",
+                "email": "chawton@abc.com"
+            },
+            {
+                "consultantName": "Ricoriki Beall",
+                "title": "QA Analyst",
+                "email": "rbeall@abc.com"
+            },
+            {
+                "consultantName": "Luelle Stairmond",
+                "title": "QA Analyst",
+                "email": "lstairmond@abc.com"
+            },
+            {
+                "consultantName": "Deva Ornillos",
+                "title": "QA Analyst",
+                "email": "dornillos@abc.com"
+            },
+            {
+                "consultantName": "Myrlene Vedeniktov",
+                "title": "QA Analyst",
+                "email": "mvedenkitov@abc.com"
+            },
+            {
+                "consultantName": "Ezmeralda Nickels",
+                "title": "QA Analyst",
+                "email": "emickels@abc.com"
+            },
+            {
+                "consultantName": "Stanfield Greder",
+                "title": "QA Analyst",
+                "email": "sgreder@abc.com"
+            },
+            {
+                "consultantName": "Georgina Donn",
+                "title": "QA Analyst",
+                "email": "gdonn@abc.com"
+            },
+            {
+                "consultantName": "Joachim Colbert",
+                "title": "QA Analyst",
+                "email": "jcolbert@abc.com"
+            },
+            {
+                "consultantName": "Adams Friday",
+                "title": "QA Analyst",
+                "email": "afriday@abc.com"
+            },
+            {
+                "consultantName": "Amelie Lidgely",
+                "title": "QA Analyst",
+                "email": "alidgely@abc.com"
+            },
+            {
+                "consultantName": "Robert Kettle",
+                "title": "QA Analyst",
+                "email": "rkettle@abc.com"
+            },
+            {
+                "consultantName": "Everard Jordine",
+                "title": "QA Analyst",
+                "email": "ejordine@abc.com"
+            },
+            {
+                "consultantName": "Eilis Ussher",
+                "title": "QA Analyst",
+                "email": "eussher@abc.com"
+            },
+            {
+                "consultantName": "Tulley Maylin",
+                "title": "QA Analyst",
+                "email": "tmaylin@abc.com"
+            },
+            {
+                "consultantName": "Glyn Ungerer",
+                "title": "QA Analyst",
+                "email": "bungerer@abc.com"
+            },
+            {
+                "consultantName": "Lenka Jochanany",
+                "title": "QA Analyst",
+                "email": "ljochanany@abc.com"
+            },
+            {
+                "consultantName": "Vasily Esposita",
+                "title": "QA Analyst",
+                "email": "vesposita@abc.com"
+            },
+            {
+                "consultantName": "Belvia Seabrook",
+                "title": "QA Analyst",
+                "email": "bseabrook@abc.com"
+            },
+            {
+                "consultantName": "Tod Walkden",
+                "title": "QA Analyst",
+                "email": "twalkden@abc.com"
+            },
+            {
+                "consultantName": "Cloe Trittam",
+                "title": "QA Analyst",
+                "email": "ctrittam@abc.com"
+            },
+            {
+                "consultantName": "Tabb Picken",
+                "title": "QA Analyst",
+                "email": "tpicken@abc.com"
+            },
+            {
+                "consultantName": "Allie McIan",
+                "title": "QA Analyst",
+                "email": "amcian@abc.com"
+            },
+            {
+                "consultantName": "Rudiger Gilmour",
+                "title": "QA Analyst",
+                "email": "rgilmour@abc.com"
+            },
+            {
+                "consultantName": "Nevin Easun",
+                "title": "QA Analyst",
+                "email": "neasun@abc.com"
+            },
+            {
+                "consultantName": "Aloysia Sidden",
+                "title": "QA Analyst",
+                "email": "asidden@abc.com"
+            },
+            {
+                "consultantName": "Katee Inkpin",
+                "title": "QA Analyst",
+                "email": "kinkpin@abc.com"
+            },
+            {
+                "consultantName": "Gideon Riding",
+                "title": "QA Analyst",
+                "email": "griding@abc.com"
+            },
+            {
+                "consultantName": "Kenyon Wanklin",
+                "title": "QA Analyst",
+                "email": "kwanklin@abc.com"
+            },
+            {
+                "consultantName": "Diannne Spurdens",
+                "title": "QA Analyst",
+                "email": "dspurdens@abc.com"
+            },
+            {
+                "consultantName": "Stevana Getty",
+                "title": "QA Analyst",
+                "email": "sgetty@abc.com"
+            },
+            {
+                "consultantName": "Lauritz Beaty",
+                "title": "QA Analyst",
+                "email": "lbeaty@abc.com"
+            }
+        ]
 }
