@@ -28,7 +28,7 @@ function OnDeckMapping(onDeckArray: Array<string>) {
     var obj = clientAllocations.clientAllocations
 
     obj.forEach(element => {
-        if (element.clientName == "On Deck") { onDeckArray.push(element.employeeName) }
+        if (element.clientName == "On Deck") { onDeckArray.push(element.consultantName) }
     });
     return onDeckArray;
 }
