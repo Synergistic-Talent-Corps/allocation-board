@@ -1,11 +1,37 @@
 import * as React from 'react';
+import * as clientAllocations from './json/clientAllocations.json'
 
 type ConsultantInformationProps = {
     onPageChange: Function;
     consultantName: string;
 }
 
+// object to store consultant information from the json
+interface ConsultantInfo {
+    consultantName: string,
+    title: string,
+    email: string
+}
+
+// get the consultant information
+function getConsultantInfo(Consultant: string, consultantInfo: ConsultantInfo) {
+    var obj = clientAllocations.consultants;
+
+    obj.forEach(element => {
+        if (element.consultantName == Consultant) {
+            consultantInfo.consultantName = element.consultantName;
+            consultantInfo.title = element.title;
+            consultantInfo.email = element.email;
+        }
+    })
+}
+
+
 function ConsultantInformation(props: ConsultantInformationProps) {
+    var obj = clientAllocations.consultants;
+    let consultantInfo = {} as ConsultantInfo;
+
+    getConsultantInfo(props.consultantName, consultantInfo);
     
     return (
 
@@ -13,11 +39,11 @@ function ConsultantInformation(props: ConsultantInformationProps) {
             <button type="button" onClick={() => props.onPageChange('Allocation Board')}>Back</button>
 
             <div className="form-group" >
-                <input type="text" name="name" placeholder ={props.consultantName} />
-                <input type="text" name="title" placeholder ="Title" />
+                <input type="text" name="name" placeholder ={consultantInfo.consultantName} />
+                <input type="text" name="title" placeholder ={consultantInfo.title} />
                 <br />
                 <br />
-                <input type="text" name="email" placeholder ="Email" />
+                <input type="text" name="email" placeholder ={consultantInfo.email} />
                 <a href="">Resume</a>
                 <br />
                 <br />
