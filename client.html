@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>tapQA Allocation Board</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    #p01 {
-            position: relative; left: 20px; top:20px; background-color:Green; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px;
-        }
-    #p02 {
-            position: relative; left: 20px; top:20px; background-color:Gray; width:260px; height:24px; text-align:center; border:2px solid black; border-radius:10px;
-        }
-</style>
 </head>
 <style>
-    h1 {
-        text-align: center
-    }
-
-    .column {
-        width: 300px;
-        height: 400px;
-        border: 2px solid black;
-        border-radius: 10px;
-        box-shadow: 2px 3px 6px gray;
-    }
-
-    .card {
-        width: 300px;
-    }
-
-
-    .div1 {
-        width: 300px;
-        height: 25px;
-        padding-left: 10%;
-        box-sizing: border-box;
-    }
-
-    .div2 {
-        width: 300px;
-        height: 25px;
-        box-sizing: border-box;
-    }
+    .poc {
+  background-color: lightgrey;
+  width: 860px;
+  border: 1px solid black;
+  padding: 10px;
+}
 </style>
-
-
-
 <body>
-    <div class="container">
-        <header id="main-header">
-            <div class="container">
-                <h1>Client Information</h1>
-            </div>
-        </header>
-
-        <navbar id="navbar">
-            <div class="container">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="client.html">Clients</a></li>
-                    <li><a href="consultant.html">Consultants</a></li>
-                </ul>
-            </div>
-        </navbar>
-
-        <div class="column">
-            <div class="card">
-                <h1>Client ONE</h1>
-                <div style="border-top: 2px solid black; width:300px;"></div>
-                <div class="div1">Employee / Point of Contact</div>
-                <div class="div2">Employee</div>
-                <div class="div2">Employee2</div>
-            </div>
+<div class="container">
+    <header id="main-header">
+        <div class="container">
+            <h1>Client Information</h1>
         </div>
+    </header>
 
-        <footer id="main-footer">
-            <p>Copyright &copy; 2020 tapQA. All Rights Reserved</p>
-        </footer>
-    </div>
+    <navbar id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="client.html">Clients</a></li>
+                <li><a href="consultant.html">Consultants</a></li>
+            </ul>
+        </div>
+    </navbar>
+
+    <form class="my-form">
+        <div class="form-group" >
+
+            <input type="text" name="company_name" placeholder ="Company Name" style="float:left; width:400px; margin-right:20px;">
+            <input type="text" name="phone_number" placeholder ="Phone Number" style="width:400px;">
+            <br>
+            <br>
+            <input type="text" name="physical_address" placeholder ="Physical Address" style="float:left; width:400px; margin-right:20px;">
+            <input type="text" name="email_address" placeholder ="Email Address" style="width:400px;">
+            <br>
+            <br>
+            <!-- Write your comments here -->
+            <div class="poc">
+            <p>Person of Contact</p>
+            <input type="text" name="poc_name" placeholder ="Name" style="float:left; width:380px; margin-right:20px;">
+            <input type="text" name="poc_title" placeholder ="Title/Name" style="width:400px;">
+            <br>
+            <br>
+            <input type="text" name="phone_number" placeholder ="Phone Number" style="float:left; width:380px; margin-right:20px;">
+            <input type="text" name="poc_email" placeholder ="Email" style="width:400px;">
+            <br>
+            <br>
+            <input type="checkbox" id="primary_contact" name="primary_contact" value="primary_contact">
+            <label for="primary_contact"> Primary Contact </label>
+                <br>
+            <textarea rows="15" style=" width: 830px; height: 150px; font-size: 16px;" placeholder="Notes"></textarea>
+            <br>
+            </div>
+            <!-- Write your comments here -->
+            <br>
+            <button type="button" style = "width:150px; height:25px; margin-right:20px; ">Add Contact</button>
+            <br>
+            <br>
+
+            <textarea rows="15" style=" width: 860px; height: 150px; font-size: 16px;" placeholder="Notes"></textarea>
+            <br>
+            <br>
+            <button type="button" style = "float:left; width:150px; height:25px; margin-left:560px; margin-right:20px; ">Edit</button>
+            <button type="button" style = "width:150px; height:25px; ">Save and Close</button>
+        </div>
+    </form>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2020 tapQA. All Rights Reserved</p>
+    </footer>
+</div>
 </body>
-
 </html>
