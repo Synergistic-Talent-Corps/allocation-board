@@ -1,0 +1,112 @@
+body{
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.clr{
+    clear: both;
+}
+
+#main-header{
+    background-color: #76ee00;
+    color: #fff;
+    padding: 10px;
+}
+
+#navbar{
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #333;
+    text-decoration: none; /* get rid of the underline */
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.companyblock{
+    float: left;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.companyblock ul{
+    padding: 0;
+    list-style: none;
+}
+
+.companyblock a{
+    text-decoration: none;
+}
+
+.companyblock li{
+    background-color: red;
+    border: 1px solid black;
+}
+
+.ondeck{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.ondeck ul{
+    padding: 0;
+    list-style: none;
+}
+
+.ondeck li{
+    display: inline;
+}
+
+.ondeck a{
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+#main-footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    margin-top: 20px;
+}
