@@ -2,12 +2,17 @@
     "clientAllocations": [
         {
             "employeeName": "Jeff Meidt",
+            "title": "QA Lead",
+            "emailAddress": "abc@xyz.com",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
             "clientEndDate": "",
+            "percentageAlloc": "100",
             "teamLead": false,
             "tentative": false,
-            "splitAllocation": ""
+            "splitAllocation": "",
+            "employeeSkills": "Java, QC, Selenium",
+            "employeeNotes": "Jave proficient, works in Central timezone"
         },
         {
             "employeeName": "Tony Pember",
@@ -535,7 +540,13 @@
     "clients": [
         {
             "name": "Delta Dental",
-            "pointOfContact": ""
+            "pointOfContact": "",
+            "titlePOC": "QA Director",
+            "pocPhoneNumber": "1122334455",
+            "pocEmailAddress": "lmo@xyz.com",
+            "tapAccountManager": "",
+            "clientPhoneNumber": "1234567890",
+            "clientNotes": "Prefer Monthly Status report"
         },
         {
             "name": "Carnival Cruise",
