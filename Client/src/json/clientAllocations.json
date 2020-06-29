@@ -5,9 +5,9 @@
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
             "clientEndDate": "",
-            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false
+            "tentative": false,
+            "splitAllocation": false
         },
         {
             "consultantName": "Tony Pember",
@@ -457,14 +457,7 @@
             "phoneNumber": "612-555-1212",
             "address": "555 Main St Paul, MN 55443",
             "email": "deltadental@abc.com",
-            "clientNotes": "Prefer Monthly Status report",
-            "namePOC": "John Doe",
-            "titlePOC": "QA Director",
-            "phoneNumberPOC": "1122334455",
-            "emailAddressPOC": "lmo@xyz.com",
-            "primaryContact": true,
-            "notesPOC": "4 day week, not available on Friday. Based out of Chicago",
-            "tapAccountManager": ""
+            "pointOfContact": ""
         },
         {
             "clientName": "Carnival Cruise",
@@ -499,10 +492,7 @@
             {
                 "consultantName": "Jeff Meidt",
                 "title": "QA Analyst",
-                "email": "jmeidt@abc.com",
-                "splitAllocation": false,
-                "consultantSkills": "Java, QC, Selenium",
-                "consultantNotes": "Jave proficient, works in Central timezone"
+                "email": "jmeidt@abc.com"
             },
             {
                 "consultantName": "Tony Pember",
