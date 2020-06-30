@@ -4,6 +4,7 @@ type FooterProps = {
     text: string;
 }
 
+// component function
 function Footer(props: FooterProps) {
     React.useEffect(() => {
         //alert(document.querySelector('#myFooter'));

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as clientAllocations from './json/clientAllocations.json'
+import { useEffect, useState } from 'react';
 import { CSSProperties } from 'react';
 
 type ClientBlockProps = {
@@ -9,8 +9,8 @@ type ClientBlockProps = {
     onConsultantChange: Function;
 }
 
-// object to store allocations from the json
-interface Allocation {
+// object to store allocations
+export interface Allocation {
     consultantName: string,
     clientName: string,
     clientStartDate: string,
@@ -20,26 +20,7 @@ interface Allocation {
     splitAllocation: boolean
 };
 
-// build a list of Allocations under the client
-function clientAllocationMapping(Client: string, allocationArray2: Array<Allocation> ) {
-    var obj = clientAllocations.clientAllocations;
-
-    obj.forEach(element => {
-        if (element.clientName == Client) {
-            let consultantAllocation = {} as Allocation;
-            consultantAllocation.consultantName = element.consultantName;
-            consultantAllocation.clientName = element.clientName;
-            consultantAllocation.clientStartDate = element.clientStartDate;
-            consultantAllocation.clientEndDate = element.clientEndDate;
-            consultantAllocation.teamLead = element.teamLead;
-            consultantAllocation.tentative = element.tentative;
-            consultantAllocation.splitAllocation = element.splitAllocation;
-            allocationArray2.push(consultantAllocation);
-        }
-    })
-}
-
-// check the end date for the consultant and return red if they are < 30 days from end date
+// check the end date for the consultant and return a color
 function consultantCloseToEndDate(clientEndDate: string): string {
     let currentDate: Date = new Date();
     let endDate: Date = new Date(clientEndDate);
@@ -51,33 +32,53 @@ function consultantCloseToEndDate(clientEndDate: string): string {
         returnColor = "red";
     } else if ((+endDate - 2629746000) < +currentDate) { // end date - milliseconds in a month
         returnColor = "yellow";
-    }
+    };
     
     return returnColor; 
 }
 
+// component function
 function ClientBlock(props: ClientBlockProps) {
 
-    let myStyleRed: CSSProperties = {
-        background: 'red'
-    }
-    let myStyleGreen: CSSProperties = {
-        background: '#76ee00' // green background
-    }
-    let myStyleOrange: CSSProperties = {
-        background: 'orange'
-    }
-    let myStyleYellow: CSSProperties = {
-        background: 'yellow'
-    }
-
+    // styles for the consultants to set the background color
+    let myStyleRed: CSSProperties = { background: 'red' };
+    let myStyleGreen: CSSProperties = { background: '#76ee00' }; // green background
+    let myStyleOrange: CSSProperties = { background: 'orange' };
+    let myStyleYellow: CSSProperties = { background: 'yellow' };
     let backgroundColor: string = "";
 
-    // array of employees(consultants) under a certain client
+    // array of consultants under the client specified in props
     let allocationArray: Array<Allocation> = [];
 
-    // load the array of consultants under the client
-    clientAllocationMapping(props.clientName, allocationArray);
+    // state to hold all of the allocations
+    const [allocations, setAllocations] = useState<Allocation[]>([]);
+
+    // fetch the allocations using an api call
+    async function fetchAllocations() {
+        const response = await fetch("http://localhost:5000/api/allocations");
+
+        let data = await response.json();
+    
+        // set the state for allocations
+        setAllocations(data.clientAllocations);
+    }
+
+    useEffect(() => { fetchAllocations(); }, []);
+    
+    // load the array of allocations for the specified client
+    allocations.forEach((allocation: Allocation) => {
+        if (allocation.clientName == props.clientName) {
+            let consultantAllocation = {} as Allocation;
+            consultantAllocation.consultantName = allocation.consultantName;
+            consultantAllocation.clientName = allocation.clientName;
+            consultantAllocation.clientStartDate = allocation.clientStartDate;
+            consultantAllocation.clientEndDate = allocation.clientEndDate;
+            consultantAllocation.teamLead = allocation.teamLead;
+            consultantAllocation.tentative = allocation.tentative;
+            consultantAllocation.splitAllocation = allocation.splitAllocation;
+            allocationArray.push(consultantAllocation);
+        }
+    })
 
     return (
         <div className="clientblock">
