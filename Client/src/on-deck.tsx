@@ -1,5 +1,6 @@
 import * as React from 'react';
-import * as clientAllocations from './json/clientAllocations.json'
+import { useState, useEffect} from 'react';
+import { Allocation } from './client-block'
 
 type OnDeckProps = {
     onPageChange: Function;
@@ -7,26 +8,48 @@ type OnDeckProps = {
     onConsultantChange: Function;
 }
 
-function OnDeckMapping(onDeckArray: Array<string>) {
-    var obj = clientAllocations.clientAllocations
-
-    obj.forEach(element => {
-        if (element.clientName == "On Deck") { onDeckArray.push(element.consultantName) }
-    });
-    return onDeckArray;
-}
-
+// component function
 function OnDeck(props: OnDeckProps) {
-    let onDeckArray: Array<string> = [];
 
-    OnDeckMapping(onDeckArray);
- 
+    // array of consultants under the On Deck
+    let onDeckArray: Array<Allocation> = [];
+
+    // state to hold all of the allocations
+    const [allocations, setAllocations] = useState<Allocation[]>([]);
+
+    // fetch the allocations using an api call
+    async function fetchAllocations() {
+        const response = await fetch("http://localhost:5000/api/allocations");
+
+        let data = await response.json();
+    
+        // set the state for allocations
+        setAllocations(data.clientAllocations);
+    }
+
+    useEffect(() => { fetchAllocations(); }, []);
+    
+    // load the array of allocations for On Deck
+    allocations.forEach((allocation: Allocation) => {
+        if (allocation.clientName == 'On Deck') {
+            let consultantAllocation = {} as Allocation;
+            consultantAllocation.consultantName = allocation.consultantName;
+            consultantAllocation.clientName = allocation.clientName;
+            consultantAllocation.clientStartDate = allocation.clientStartDate;
+            consultantAllocation.clientEndDate = allocation.clientEndDate;
+            consultantAllocation.teamLead = allocation.teamLead;
+            consultantAllocation.tentative = allocation.tentative;
+            consultantAllocation.splitAllocation = allocation.splitAllocation;
+            onDeckArray.push(consultantAllocation);
+        }
+    })
+
     return (
         <div className="ondeck">
             <p>On Deck</p>
             <ul>
-                {onDeckArray.map((consultantName, index) => {
-                    return <li key={index}><button onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(consultantName)}}>{consultantName}</button></li>
+                {onDeckArray.map((allocation, index) => {
+                    return <li key={index}><button onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
                 })}
             </ul>
         </div>
@@ -36,5 +59,5 @@ function OnDeck(props: OnDeckProps) {
 OnDeck.displayName = "OnDeck";
 
 export {
-    OnDeck, OnDeckMapping
+    OnDeck
 }
