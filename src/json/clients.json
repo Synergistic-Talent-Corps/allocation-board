@@ -1,0 +1,39 @@
+{
+    "clients": [
+        {
+            "clientName": "Delta Dental",
+            "phoneNumber": "612-555-1212",
+            "address": "555 Main St Paul, MN 55443",
+            "email": "deltadental@abc.com",
+            "pointOfContact": ""
+        },
+        {
+            "clientName": "Carnival Cruise",
+            "phoneNumber": "612-555-1213",
+            "address": "556 Main St Paul, MN 55443",
+            "email": "carnivalcruise@abc.com",
+            "pointOfContact": ""
+        },
+        {
+            "clientName": "Health Partners",
+            "phoneNumber": "612-555-1214",
+            "address": "557 Main St Paul, MN 55443",
+            "email": "healthpartners@abc.com",
+            "pointOfContact": ""
+        },
+        {
+            "clientName": "Beach Body",
+            "phoneNumber": "612-555-1215",
+            "address": "558 Main St Paul, MN 55443",
+            "email": "beachbody@abc.com",
+            "pointOfContact": ""
+        },
+        {
+            "clientName": "Red Wing Shoes",
+            "phoneNumber": "612-555-1216",
+            "address": "559 Main St Paul, MN 55443",
+            "email": "redwingshoes@abc.com",
+            "pointOfContact": ""
+        }
+    ]
+}

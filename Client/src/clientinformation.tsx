@@ -1,13 +1,13 @@
 import * as React from 'react';
-import * as clientAllocations from './json/clientAllocations.json'
+import { useState, useEffect } from 'react';
 
 type ClientInformationProps = {
-    onPageChange: Function;
     clientName: string;
+    onPageChange: Function;
 }
 
-// object to store client information from the json
-interface ClientInfo {
+// object to store client information
+export interface Client {
     clientName: string,
     phoneNumber: string,
     address: string,
@@ -15,42 +15,48 @@ interface ClientInfo {
     pointOfContact: string
 }
 
-// get the client information
-function getClientInfo(Client: string, clientInfo: ClientInfo) {
-    var obj = clientAllocations.clients;
+// component function
+function ClientInformation(props: ClientInformationProps) {
 
-    // TRY USING A FILTER FUNCTION TO RETURN THE SPECIFIC CLIENT!!!
+    let currentClient = {} as Client;
 
-    // obj.filter
+    // state to hold all of the clients
+    const [clients, setClients] = useState<Client[]>([]);
 
-    obj.forEach(element => {
-        if (element.clientName == Client) {
-            clientInfo.clientName = element.clientName;
-            clientInfo.phoneNumber = element.phoneNumber;
-            clientInfo.address = element.address;
-            clientInfo.email = element.email;
-            clientInfo.pointOfContact = element.pointOfContact;
+    // fetch the clients using an api call
+    async function fetchClients() {
+        const response = await fetch("http://localhost:5000/api/clients");
+
+        let data = await response.json();
+    
+        // set the state for clients
+        setClients(data.clients);
+    }
+
+    useEffect(() => { fetchClients(); }, []);
+    
+    // find the current client
+    clients.forEach((client: Client) => {
+        if (client.clientName == props.clientName) {
+            currentClient.clientName = client.clientName;
+            currentClient.phoneNumber = client.phoneNumber;
+            currentClient.address = client.address;
+            currentClient.email = client.email;
+            currentClient.pointOfContact = client.pointOfContact;
         }
     })
-}
-
-function ClientInformation(props: ClientInformationProps) {
-    var obj = clientAllocations.clients
-    let clientInfo = {} as ClientInfo;
-
-    getClientInfo(props.clientName, clientInfo);
 
     return (
         <form className="my-form">
             <button type="button" onClick={() => props.onPageChange('Allocation Board')}>Back</button>
             <div className="form-group" >
 
-                <input type="text" name="company_name" placeholder ={props.clientName} />
-                <input type="text" name="phone_number" placeholder ={clientInfo.phoneNumber} />
+                <input type="text" name="company_name" placeholder ={currentClient.clientName} />
+                <input type="text" name="phone_number" placeholder ={currentClient.phoneNumber} />
                 <br />
                 <br />
-                <input type="text" name="physical_address" placeholder ={clientInfo.address} />
-                <input type="text" name="email_address" placeholder ={clientInfo.email} />
+                <input type="text" name="physical_address" placeholder ={currentClient.address} />
+                <input type="text" name="email_address" placeholder ={currentClient.email} />
                 <br />
                 <br />
                 {/* <!-- Write your comments here --> */}

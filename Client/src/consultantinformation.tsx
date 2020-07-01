@@ -1,49 +1,58 @@
 import * as React from 'react';
-import * as clientAllocations from './json/clientAllocations.json'
+import { useState, useEffect } from 'react';
 
 type ConsultantInformationProps = {
     onPageChange: Function;
     consultantName: string;
 }
 
-// object to store consultant information from the json
-interface ConsultantInfo {
+// object to store consultant information
+interface Consultant {
     consultantName: string,
     title: string,
     email: string
 }
 
-// get the consultant information
-function getConsultantInfo(Consultant: string, consultantInfo: ConsultantInfo) {
-    var obj = clientAllocations.consultants;
+// component function
+function ConsultantInformation(props: ConsultantInformationProps) {
 
-    obj.forEach(element => {
-        if (element.consultantName == Consultant) {
-            consultantInfo.consultantName = element.consultantName;
-            consultantInfo.title = element.title;
-            consultantInfo.email = element.email;
+    let currentConsultant = {} as Consultant;
+
+    // state to hold all of the consultants
+    const [consultants, setConsultants] = useState<Consultant[]>([]);
+
+    // fetch the consultants using an api call
+    async function fetchConsultants() {
+        const response = await fetch("http://localhost:5000/api/consultants");
+
+        let data = await response.json();
+    
+        // set the state for consultants
+        setConsultants(data.consultants);
+    }
+
+    useEffect(() => { fetchConsultants(); }, []);
+    
+    // find the current consultant
+    consultants.forEach((consultant: Consultant) => {
+        if (consultant.consultantName == props.consultantName) {
+            currentConsultant.consultantName = consultant.consultantName;
+            currentConsultant.title = consultant.title;
+            currentConsultant.email = consultant.email;
         }
     })
-}
 
-
-function ConsultantInformation(props: ConsultantInformationProps) {
-    var obj = clientAllocations.consultants;
-    let consultantInfo = {} as ConsultantInfo;
-
-    getConsultantInfo(props.consultantName, consultantInfo);
-    
     return (
 
         <form className="my-form">
             <button type="button" onClick={() => props.onPageChange('Allocation Board')}>Back</button>
 
             <div className="form-group" >
-                <input type="text" name="name" placeholder ={consultantInfo.consultantName} />
-                <input type="text" name="title" placeholder ={consultantInfo.title} />
+                <input type="text" name="name" placeholder ={currentConsultant.consultantName} />
+                <input type="text" name="title" placeholder ={currentConsultant.title} />
                 <br />
                 <br />
-                <input type="text" name="email" placeholder ={consultantInfo.email} />
+                <input type="text" name="email" placeholder ={currentConsultant.email} />
                 <a href="">Resume</a>
                 <br />
                 <br />

@@ -4,9 +4,7 @@ type HeaderProps = {
     text: string;
 }
 
-// useEffect runs after the component is rendered
-//   if you return a function from useEffect, that function runs before the subsequent useEffect call
-
+// component function
 function Header(props: HeaderProps) {
     React.useEffect(() => {
         //alert(document.querySelector('#myFooter'));
