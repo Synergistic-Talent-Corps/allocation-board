@@ -504,7 +504,7 @@
             "titlePOC": "",
             "phoneNumberPOC": "",
             "emailAddressPOC": "",
-            "primaryContact": ,
+            "primaryContact": false,
             "notesPOC": "",
             "tapAccountManager": "Mr. T"
         },
@@ -672,7 +672,7 @@
                 "consultantName": "Cullin Hawton",
                 "title": "QA Analyst",
                 "email": "chawton@abc.com",
-                "splitAllocation": tue,
+                "splitAllocation": true,
                 "consultantSkills": "Java",
                 "consultantNotes": "Java proficient"
             },
