@@ -9,7 +9,6 @@ import { Header } from './header';
 import { ClientBlock } from './client-block';
 import { OnDeck } from './on-deck';
 import { Footer } from './footer';
-import { ClearFloat } from './clear-float';
 import { Navbar } from './navbar';
 import { ClientInformation, Client } from './clientinformation';
 import { ConsultantInformation } from './consultantinformation';
@@ -40,8 +39,9 @@ function App () {
             <Navbar />
             {currentPage === 'Allocation Board' && 
                 clients.map((client, index) => (<ClientBlock clientName={client.clientName} onPageChange={(value:string) => setCurrentPage(value)}  onClientChange={(value:string) => setCurrentClient(value)} onConsultantChange={(value:string) => setCurrentConsultant(value)} />))}
-            {currentPage === 'Allocation Board' && <ClearFloat />}
-            {currentPage === 'Allocation Board' && <OnDeck onPageChange={(value:string) => setCurrentPage(value)}  onClientChange={(value:string) => setCurrentClient(value)} onConsultantChange={(value:string) => setCurrentConsultant(value)}/>}
+            {currentPage === 'Allocation Board' && <div className="clr" />}
+            {currentPage === 'Allocation Board' && <OnDeck onPageChange={(value:string) => setCurrentPage(value)}  
+                onClientChange={(value:string) =>   setCurrentClient(value)} onConsultantChange={(value:string) => setCurrentConsultant(value)}/>}
             {currentPage === 'Client Information' && <ClientInformation onPageChange={(value:string) => setCurrentPage(value)} clientName={currentClient} />}
             {currentPage === 'Consultant Information' && <ConsultantInformation onPageChange={(value:string) => setCurrentPage(value)} consultantName={currentConsultant} />}
         </div>
