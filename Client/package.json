@@ -6,7 +6,6 @@
   "scripts": {
     "start:dev": "webpack-dev-server",
     "build": "webpack",
-    "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tony Pember",

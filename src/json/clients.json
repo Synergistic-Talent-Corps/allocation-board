@@ -5,35 +5,70 @@
             "phoneNumber": "612-555-1212",
             "address": "555 Main St Paul, MN 55443",
             "email": "deltadental@abc.com",
-            "pointOfContact": ""
+            "clientNotes": "Prefer Monthly Status report",
+            "namePOC": "John Doe",
+            "titlePOC": "QA Director",
+            "phoneNumberPOC": "1122334455",
+            "emailAddressPOC": "lmo@xyz.com",
+            "primaryContact": true,
+            "notesPOC": "4 day week, not available on Friday. Based out of Chicago",
+            "tapAccountManager": ""
         },
         {
             "clientName": "Carnival Cruise",
             "phoneNumber": "612-555-1213",
             "address": "556 Main St Paul, MN 55443",
             "email": "carnivalcruise@abc.com",
-            "pointOfContact": ""
+            "clientNotes": "Prefer Monthly Status report",
+            "namePOC": "Becky Lynn",
+            "titlePOC": "SVP",
+            "phoneNumberPOC": "1002003001",
+            "emailAddressPOC": "blynn@xyzcc.com",
+            "primaryContact": true,
+            "notesPOC": "Oversees QA",
+            "tapAccountManager": "Mike Name"
         },
         {
             "clientName": "Health Partners",
             "phoneNumber": "612-555-1214",
             "address": "557 Main St Paul, MN 55443",
             "email": "healthpartners@abc.com",
-            "pointOfContact": ""
+            "clientNotes": "Prefers prior appointments",
+            "namePOC": "Tom Cruise",
+            "titlePOC": "QA Manager",
+            "phoneNumberPOC": "9876543210",
+            "emailAddressPOC": "tom@xyztom.com",
+            "primaryContact": true,
+            "notesPOC": "Prefers face to face connect",
+            "tapAccountManager": "Sherlock Holmes"
         },
         {
             "clientName": "Beach Body",
             "phoneNumber": "612-555-1215",
-            "address": "558 Main St Paul, MN 55443",
+            "address": "New Street, Phonenix, AZ 85034",
             "email": "beachbody@abc.com",
-            "pointOfContact": ""
+            "clientNotes": "Prefer Monthly Status report",
+            "namePOC": "",
+            "titlePOC": "",
+            "phoneNumberPOC": "",
+            "emailAddressPOC": "",
+            "primaryContact": false,
+            "notesPOC": "",
+            "tapAccountManager": "Mr. T"
         },
         {
             "clientName": "Red Wing Shoes",
             "phoneNumber": "612-555-1216",
             "address": "559 Main St Paul, MN 55443",
             "email": "redwingshoes@abc.com",
-            "pointOfContact": ""
+            "clientNotes": "Prefer Monthly Status report",
+            "namePOC": "John Doe",
+            "titlePOC": "Development Manager",
+            "phoneNumberPOC": "8882223330",
+            "emailAddressPOC": "rws@rwsxyz.com",
+            "primaryContact": true,
+            "notesPOC": "Remote calls only",
+            "tapAccountManager": ""
         }
     ]
 }

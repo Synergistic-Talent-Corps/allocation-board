@@ -83,8 +83,8 @@ function ClientBlock(props: ClientBlockProps) {
 
     return (
         <div className="clientblock">
-            <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></button></h3>
-            {/* <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to='/client'>{props.clientName}</Link></button></h3> */}
+            {/* <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></button></h3> */}
+            <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to='/client'>{props.clientName}</Link></button></h3>
             <ul>
 
             {allocationArray.map((allocation, index) => {
