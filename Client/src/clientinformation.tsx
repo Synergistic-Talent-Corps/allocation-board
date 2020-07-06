@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
+import { RouteComponentProps } from 'react-router-dom';
 
 type ClientInformationProps = {
     clientName: string;
-    onPageChange: Function;
 }
 
 // object to store client information
@@ -37,7 +37,7 @@ function ClientInformation(props: ClientInformationProps) {
     
     // find the current client
     clients.forEach((client: Client) => {
-        if (client.clientName == props.clientName) {
+        if (client.clientName === props.clientName) {
             currentClient.clientName = client.clientName;
             currentClient.phoneNumber = client.phoneNumber;
             currentClient.address = client.address;
@@ -48,7 +48,6 @@ function ClientInformation(props: ClientInformationProps) {
 
     return (
         <form className="my-form">
-            <button type="button" onClick={() => props.onPageChange('Allocation Board')}>Back</button>
             <div className="form-group" >
 
                 <input type="text" name="company_name" placeholder ={currentClient.clientName} />

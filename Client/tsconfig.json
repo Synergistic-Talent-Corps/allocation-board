@@ -1,12 +1,24 @@
 {
-    "compilerOptions": {
-        "module": "CommonJS",
-        "jsx": "react",
-        "watch": true,
-        "target": "es5",
-        "lib": ["es6", "dom"],
-        "strict": true,
-        "moduleResolution": "node",
-        "resolveJsonModule": true
-    }
+  "compilerOptions": {
+    "module": "esnext",
+    "jsx": "react",
+    "watch": true,
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src"
+  ]
 }

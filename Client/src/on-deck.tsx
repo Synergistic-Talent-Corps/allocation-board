@@ -1,15 +1,18 @@
 import * as React from 'react';
 import { useState, useEffect} from 'react';
 import { Allocation } from './client-block'
+import { CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 
 type OnDeckProps = {
-    onPageChange: Function;
     onClientChange: Function;
     onConsultantChange: Function;
 }
 
 // component function
 function OnDeck(props: OnDeckProps) {
+
+    let myStyleLink: CSSProperties = { color: 'black' };
 
     // array of consultants under the On Deck
     let onDeckArray: Array<Allocation> = [];
@@ -31,7 +34,7 @@ function OnDeck(props: OnDeckProps) {
     
     // load the array of allocations for On Deck
     allocations.forEach((allocation: Allocation) => {
-        if (allocation.clientName == 'On Deck') {
+        if (allocation.clientName === 'On Deck') {
             let consultantAllocation = {} as Allocation;
             consultantAllocation.consultantName = allocation.consultantName;
             consultantAllocation.clientName = allocation.clientName;
@@ -49,7 +52,7 @@ function OnDeck(props: OnDeckProps) {
             <p>On Deck</p>
             <ul>
                 {onDeckArray.map((allocation, index) => {
-                    return <li key={index}><button onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
+                    return <li key={index}><button onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style = {myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
                 })}
             </ul>
         </div>

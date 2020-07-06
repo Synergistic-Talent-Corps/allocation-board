@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 
 type ClientBlockProps = {
     clientName: string;
-    onPageChange: Function;
     onClientChange: Function;
     onConsultantChange: Function;
 }
@@ -26,7 +26,7 @@ function consultantCloseToEndDate(clientEndDate: string): string {
     let endDate: Date = new Date(clientEndDate);
     let returnColor: string = "#76ee00"; // default the color to green
     
-    if (clientEndDate == "") {
+    if (clientEndDate === "") {
         returnColor = "#76ee00"; //end date is blank, so leave returnColor set to green
     } else if ((+endDate) < +currentDate) {
         returnColor = "red";
@@ -41,10 +41,11 @@ function consultantCloseToEndDate(clientEndDate: string): string {
 function ClientBlock(props: ClientBlockProps) {
 
     // styles for the consultants to set the background color
-    let myStyleRed: CSSProperties = { background: 'red' };
-    let myStyleGreen: CSSProperties = { background: '#76ee00' }; // green background
-    let myStyleOrange: CSSProperties = { background: 'orange' };
-    let myStyleYellow: CSSProperties = { background: 'yellow' };
+    let myStyleLink: CSSProperties = { color: 'black' };
+    let myStyleRed: CSSProperties = { background: 'red', color: 'black' };
+    let myStyleGreen: CSSProperties = { background: '#76ee00', color: 'black' }; // green background
+    let myStyleOrange: CSSProperties = { background: 'orange', color: 'black' };
+    let myStyleYellow: CSSProperties = { background: 'yellow', color: 'black' };
     let backgroundColor: string = "";
 
     // array of consultants under the client specified in props
@@ -67,7 +68,7 @@ function ClientBlock(props: ClientBlockProps) {
     
     // load the array of allocations for the specified client
     allocations.forEach((allocation: Allocation) => {
-        if (allocation.clientName == props.clientName) {
+        if (allocation.clientName === props.clientName) {
             let consultantAllocation = {} as Allocation;
             consultantAllocation.consultantName = allocation.consultantName;
             consultantAllocation.clientName = allocation.clientName;
@@ -82,20 +83,21 @@ function ClientBlock(props: ClientBlockProps) {
 
     return (
         <div className="clientblock">
-            <h3><button onClick={() => {props.onPageChange('Client Information'); props.onClientChange(props.clientName)}}>{props.clientName}</button></h3>
+            <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></button></h3>
+            {/* <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to='/client'>{props.clientName}</Link></button></h3> */}
             <ul>
 
             {allocationArray.map((allocation, index) => {
                 backgroundColor = consultantCloseToEndDate(allocation.clientEndDate);
 
-                if (allocation.tentative == true) {
-                    return <li key={index} style = {myStyleOrange}><button style = {myStyleOrange} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
-                } else if (backgroundColor == "#76ee00") {
-                    return <li key={index} style = {myStyleGreen}><button style = {myStyleGreen} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
-                } else if (backgroundColor == "yellow") {
-                    return <li key={index} style = {myStyleYellow}><button style = {myStyleYellow} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
-                } else if (backgroundColor == "red") {
-                    return <li key={index} style = {myStyleRed}><button style = {myStyleRed} onClick={() => {props.onPageChange('Consultant Information'); props.onConsultantChange(allocation.consultantName)}}>{allocation.consultantName}</button></li>
+                if (allocation.tentative === true) {
+                    return <li key={index} style={myStyleOrange}><button style={myStyleOrange} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                } else if (backgroundColor === "#76ee00") {
+                    return <li key={index} style={myStyleGreen}><button style={myStyleGreen} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                } else if (backgroundColor === "yellow") {
+                    return <li key={index} style={myStyleYellow}><button style={myStyleYellow} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                } else if (backgroundColor === "red") {
+                    return <li key={index} style={myStyleRed}><button style={myStyleRed} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
             }})}
             </ul>
         </div>
