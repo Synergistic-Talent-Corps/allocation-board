@@ -1,13 +1,18 @@
 import * as React from 'react';
+import { CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 
 // component function
 function Navbar() {
+
+    let myStyleLink: CSSProperties = { color: '#fff' };
+
     return (
         <div id="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="client.html">Clients</a></li>
-                <li><a href="consultant.html">Consultants</a></li>
+                <Link style={myStyleLink} to="/"><li>Home</li></Link>
+                <Link style={myStyleLink} to="/client"><li>Clients</li></Link>
+                <Link style={myStyleLink} to="/consultant"><li>Consultants</li></Link>
             </ul>
         </div>
     )

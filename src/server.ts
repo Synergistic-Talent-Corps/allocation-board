@@ -1,5 +1,5 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
-import * as clientAllocations from "./json/clientAllocations.json";
+import * as clientAllocations from "./json/clientallocations.json";
 import * as clients from "./json/clients.json";
 import * as consultants from "./json/consultants.json";
 import cors from 'cors';

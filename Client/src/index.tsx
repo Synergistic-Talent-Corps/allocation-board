@@ -5,6 +5,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route, RouteComponentProps } from 'react-router-dom'
 import { Header } from './header';
 import { ClientBlock } from './client-block';
 import { OnDeck } from './on-deck';
@@ -13,9 +14,14 @@ import { Navbar } from './navbar';
 import { ClientInformation, Client } from './clientinformation';
 import { ConsultantInformation } from './consultantinformation';
 
+interface MatchParams {
+    name: string;
+};
+
+interface MatchProps extends RouteComponentProps<MatchParams> {};
+
 // main component function
 function App () {
-    const [ currentPage, setCurrentPage ] = useState<string>('Allocation Board');
     const [ currentClient, setCurrentClient ] = useState<string>('');
     const [ currentConsultant, setCurrentConsultant ] = useState<string>('');
 
@@ -35,16 +41,33 @@ function App () {
     useEffect(() => { fetchClients(); }, []);
 
     return (
-        <div>
-            <Navbar />
-            {currentPage === 'Allocation Board' && 
-                clients.map((client, index) => (<ClientBlock clientName={client.clientName} onPageChange={(value:string) => setCurrentPage(value)}  onClientChange={(value:string) => setCurrentClient(value)} onConsultantChange={(value:string) => setCurrentConsultant(value)} />))}
-            {currentPage === 'Allocation Board' && <div className="clr" />}
-            {currentPage === 'Allocation Board' && <OnDeck onPageChange={(value:string) => setCurrentPage(value)}  
-                onClientChange={(value:string) =>   setCurrentClient(value)} onConsultantChange={(value:string) => setCurrentConsultant(value)}/>}
-            {currentPage === 'Client Information' && <ClientInformation onPageChange={(value:string) => setCurrentPage(value)} clientName={currentClient} />}
-            {currentPage === 'Consultant Information' && <ConsultantInformation onPageChange={(value:string) => setCurrentPage(value)} consultantName={currentConsultant} />}
-        </div>
+        <Router>
+            <div>
+                <Navbar />
+                <Switch>
+                    <Route exact path="/">
+                        {clients.map((client, index) => (<ClientBlock clientName={client.clientName} 
+                            onClientChange={(value:string) => setCurrentClient(value)} 
+                            onConsultantChange={(value:string) => setCurrentConsultant(value)} />))}
+                        <div className="clr" />
+                        <OnDeck onClientChange={(value:string) => setCurrentClient(value)} 
+                            onConsultantChange={(value:string) => setCurrentConsultant(value)}/>
+                    </Route>
+                    {/* <Route path="/client/:name">
+                        {( {match}: MatchProps ) => (console.log("match params name: " + match.params.name) )}
+                    </Route> */}
+                    {/* <Route path="/client/:name"> {( {match}: MatchProps) => (
+                        <ClientInformation clientName={match.params.name} /> )} 
+                    </Route> */}
+                    <Route path="/client">
+                        <ClientInformation clientName={currentClient} />
+                    </Route>
+                    <Route path="/consultant">
+                        <ConsultantInformation consultantName={currentConsultant} />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     )
 }
 

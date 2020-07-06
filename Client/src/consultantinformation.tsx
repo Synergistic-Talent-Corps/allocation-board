@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 
 type ConsultantInformationProps = {
-    onPageChange: Function;
     consultantName: string;
 }
 
@@ -35,7 +34,7 @@ function ConsultantInformation(props: ConsultantInformationProps) {
     
     // find the current consultant
     consultants.forEach((consultant: Consultant) => {
-        if (consultant.consultantName == props.consultantName) {
+        if (consultant.consultantName === props.consultantName) {
             currentConsultant.consultantName = consultant.consultantName;
             currentConsultant.title = consultant.title;
             currentConsultant.email = consultant.email;
@@ -45,15 +44,13 @@ function ConsultantInformation(props: ConsultantInformationProps) {
     return (
 
         <form className="my-form">
-            <button type="button" onClick={() => props.onPageChange('Allocation Board')}>Back</button>
-
             <div className="form-group" >
                 <input type="text" name="name" placeholder ={currentConsultant.consultantName} />
                 <input type="text" name="title" placeholder ={currentConsultant.title} />
                 <br />
                 <br />
                 <input type="text" name="email" placeholder ={currentConsultant.email} />
-                <a href="">Resume</a>
+                {/* <a href="">Resume</a> */}
                 <br />
                 <br />
                 <input type="checkbox" id="SplitAllocation" name="SplitAllocation" value="Allocation1" />
