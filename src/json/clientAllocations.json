@@ -5,450 +5,450 @@
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
             "clientEndDate": "",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Tony Pember",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2020",
-            "clientEndDate": "",
-            "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "clientEndDate": "31-12-2020",
+            "percentageAlloc": "100",
+            "teamLead": true,
+            "tentative": false
         },
         {
             "consultantName": "Akila Kovu",
             "clientName": "Delta Dental",
             "clientStartDate": "06-01-2019",
-            "clientEndDate": "06-01-2020",
+            "clientEndDate": "10-01-2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Alex Brickner",
             "clientName": "On Deck",
             "clientStartDate": "03-01-2019",
-            "clientEndDate": "06-01-2020",
+            "clientEndDate": "07-10-2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Alexander Helmke",
             "clientName": "Carnival Cruise",
             "clientStartDate": "01-31-2019",
-            "clientEndDate": "03-01-2019",
+            "clientEndDate": "04-01-2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
-        },
+            "tentative": false
+       },
         {
             "consultantName": "Ismaila Sall",
             "clientName": "Carnival Cruise",
             "clientStartDate": "02-01-2019",
             "clientEndDate": "",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Nolan Burgwin",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "11/19/2019",
-            "clientEndDate": "6/26/2019",
+            "clientEndDate": "07/26/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Krysta Swanne",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "11/14/2019",
-            "clientEndDate": "2/15/2020",
+            "clientEndDate": "09/15/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": true
         },
         {
             "consultantName": "Virge Comini",
             "clientName": "Delta Dental",
             "clientStartDate": "2/5/2020",
             "clientEndDate": "8/6/2020",
-            "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "percentageAlloc": "100",
+            "teamLead": true,
+            "tentative": false
         },
         {
             "consultantName": "Barry Toope",
             "clientName": "Beach Body",
             "clientStartDate": "9/1/2019",
-            "clientEndDate": "11/23/2019",
+            "clientEndDate": "11/23/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Rivy Henke",
             "clientName": "Beach Body",
             "clientStartDate": "11/18/2019",
             "clientEndDate": "9/21/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Maure Billyard",
             "clientName": "Beach Body",
             "clientStartDate": "2/3/2020",
             "clientEndDate": "8/30/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Tymothy Simonsson",
             "clientName": "Health Partners",
             "clientStartDate": "10/23/2019",
-            "clientEndDate": "12/21/2019",
+            "clientEndDate": "12/21/2020",
+            "percentageAlloc": "80",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Benni McCrisken",
             "clientName": "Beach Body",
             "clientStartDate": "4/28/2020",
-            "clientEndDate": "10/6/2019",
+            "clientEndDate": "10/6/2020",
+            "percentageAlloc": "50",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": true
         },
         {
             "consultantName": "Major Curlis",
             "clientName": "Carnival Cruise",
             "clientStartDate": "6/13/2019",
-            "clientEndDate": "12/1/2019",
+            "clientEndDate": "12/1/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Cherye Hinchon",
             "clientName": "Health Partners",
             "clientStartDate": "10/2/2019",
             "clientEndDate": "8/26/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Dillon Cow",
             "clientName": "Health Partners",
             "clientStartDate": "4/14/2020",
-            "clientEndDate": "8/20/2019",
+            "clientEndDate": "8/20/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Benjie Kembry",
             "clientName": "Health Partners",
             "clientStartDate": "5/29/2019",
             "clientEndDate": "10/28/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": true
         },
         {
             "consultantName": "Cullin Hawton",
             "clientName": "Delta Dental",
-            "clientStartDate": "9/2/2019",
+            "clientStartDate": "12/1/2020",
             "clientEndDate": "12/27/2021",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Ricoriki Beall",
             "clientName": "Health Partners",
             "clientStartDate": "10/14/2019",
             "clientEndDate": "1/1/2021",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Luelle Stairmond",
             "clientName": "Carnival Cruise",
             "clientStartDate": "9/30/2019",
             "clientEndDate": "11/4/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Deva Ornillos",
             "clientName": "Carnival Cruise",
             "clientStartDate": "2/20/2020",
             "clientEndDate": "9/13/2019",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": true
         },
         {
             "consultantName": "Myrlene Vedeniktov",
             "clientName": "Beach Body",
             "clientStartDate": "7/28/2019",
             "clientEndDate": "1/9/2021",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Ezmeralda Nickels",
             "clientName": "Delta Dental",
             "clientStartDate": "10/11/2019",
             "clientEndDate": "7/22/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Stanfield Greder",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "6/13/2019",
             "clientEndDate": "12/31/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Georgina Donn",
             "clientName": "Carnival Cruise",
             "clientStartDate": "9/24/2019",
             "clientEndDate": "4/17/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": true
         },
         {
             "consultantName": "Joachim Colbert",
             "clientName": "Health Partners",
             "clientStartDate": "6/16/2019",
-            "clientEndDate": "3/5/2020",
+            "clientEndDate": "12/5/2021",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Adams Friday",
             "clientName": "Health Partners",
             "clientStartDate": "4/20/2020",
             "clientEndDate": "8/24/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": true
         },
         {
             "consultantName": "Amelie Lidgely",
             "clientName": "Carnival Cruise",
             "clientStartDate": "3/20/2020",
             "clientEndDate": "7/21/2019",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Robert Kettle",
             "clientName": "Delta Dental",
             "clientStartDate": "3/1/2020",
-            "clientEndDate": "7/4/2020",
+            "clientEndDate": "11/4/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Everard Jordine",
             "clientName": "Delta Dental",
             "clientStartDate": "11/28/2019",
             "clientEndDate": "8/26/2019",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": true
         },
         {
             "consultantName": "Eilis Ussher",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "1/27/2020",
             "clientEndDate": "1/7/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Tulley Maylin",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "2/1/2020",
             "clientEndDate": "8/19/2019",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Glyn Ungerer",
             "clientName": "Beach Body",
             "clientStartDate": "1/28/2020",
             "clientEndDate": "10/29/2019",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Lenka Jochanany",
             "clientName": "Delta Dental",
             "clientStartDate": "3/21/2020",
             "clientEndDate": "1/26/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Vasily Esposita",
             "clientName": "Carnival Cruise",
-            "clientStartDate": "11/25/2019",
-            "clientEndDate": "1/17/2020",
+            "clientStartDate": "1/25/2020",
+            "clientEndDate": "7/17/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Belvia Seabrook",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "8/13/2019",
             "clientEndDate": "9/28/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Tod Walkden",
             "clientName": "Beach Body",
             "clientStartDate": "5/23/2020",
             "clientEndDate": "1/6/2021",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Cloe Trittam",
             "clientName": "Delta Dental",
             "clientStartDate": "1/11/2020",
             "clientEndDate": "3/1/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": true
         },
         {
             "consultantName": "Tabb Picken",
             "clientName": "Health Partners",
             "clientStartDate": "9/7/2019",
             "clientEndDate": "1/17/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Allie McIan",
             "clientName": "Beach Body",
             "clientStartDate": "9/15/2019",
             "clientEndDate": "6/2/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": true,
-            "splitAllocation": true
+            "tentative": true
         },
         {
             "consultantName": "Rudiger Gilmour",
             "clientName": "Red Wing Shoes",
             "clientStartDate": "12/5/2019",
-            "clientEndDate": "1/26/2020",
+            "clientEndDate": "1/26/2021",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Nevin Easun",
             "clientName": "Carnival Cruise",
             "clientStartDate": "11/28/2019",
             "clientEndDate": "7/12/2019",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Aloysia Sidden",
             "clientName": "Beach Body",
             "clientStartDate": "1/15/2020",
-            "clientEndDate": "3/20/2020",
+            "clientEndDate": "7/20/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": true
-        },
+            "tentative": false
+       },
         {
             "consultantName": "Katee Inkpin",
             "clientName": "Delta Dental",
             "clientStartDate": "10/31/2019",
             "clientEndDate": "12/4/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         },
         {
             "consultantName": "Gideon Riding",
             "clientName": "Delta Dental",
             "clientStartDate": "8/7/2019",
             "clientEndDate": "10/13/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Kenyon Wanklin",
             "clientName": "Beach Body",
             "clientStartDate": "9/1/2019",
             "clientEndDate": "2/28/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Diannne Spurdens",
             "clientName": "Beach Body",
             "clientStartDate": "1/10/2020",
-            "clientEndDate": "7/25/2019",
+            "clientEndDate": "7/25/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": true,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Stevana Getty",
             "clientName": "Delta Dental",
             "clientStartDate": "11/27/2019",
             "clientEndDate": "5/2/2020",
+            "percentageAlloc": "100",
             "teamLead": true,
-            "tentative": false,
-            "splitAllocation": false
+            "tentative": false
         },
         {
             "consultantName": "Lauritz Beaty",
             "clientName": "Carnival Cruise",
             "clientStartDate": "5/7/2020",
             "clientEndDate": "8/12/2020",
+            "percentageAlloc": "100",
             "teamLead": false,
-            "tentative": false,
-            "splitAllocation": true
+            "tentative": false
         }
-    ]
+   ]
 }
