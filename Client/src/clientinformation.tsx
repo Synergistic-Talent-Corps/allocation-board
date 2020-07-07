@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
-
-type ClientInformationProps = {
-    clientName: string;
-}
+import { useParams } from 'react-router-dom';
 
 // object to store client information
 export interface Client {
@@ -16,7 +12,10 @@ export interface Client {
 }
 
 // component function
-function ClientInformation(props: ClientInformationProps) {
+function ClientInformation() {
+
+    // get the client name from useParams
+    let { clientName } = useParams();
 
     let currentClient = {} as Client;
 
@@ -37,7 +36,7 @@ function ClientInformation(props: ClientInformationProps) {
     
     // find the current client
     clients.forEach((client: Client) => {
-        if (client.clientName === props.clientName) {
+        if (client.clientName === clientName) {
             currentClient.clientName = client.clientName;
             currentClient.phoneNumber = client.phoneNumber;
             currentClient.address = client.address;

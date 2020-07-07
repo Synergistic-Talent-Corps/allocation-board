@@ -5,7 +5,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, RouteComponentProps } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Header } from './header';
 import { ClientBlock } from './client-block';
 import { OnDeck } from './on-deck';
@@ -13,12 +13,6 @@ import { Footer } from './footer';
 import { Navbar } from './navbar';
 import { ClientInformation, Client } from './clientinformation';
 import { ConsultantInformation } from './consultantinformation';
-
-interface MatchParams {
-    name: string;
-};
-
-interface MatchProps extends RouteComponentProps<MatchParams> {};
 
 // main component function
 function App () {
@@ -46,24 +40,15 @@ function App () {
                 <Navbar />
                 <Switch>
                     <Route exact path="/">
-                        {clients.map((client, index) => (<ClientBlock clientName={client.clientName} 
-                            onClientChange={(value:string) => setCurrentClient(value)} 
-                            onConsultantChange={(value:string) => setCurrentConsultant(value)} />))}
+                        {clients.map((client, index) => (<ClientBlock key={index} clientName={client.clientName} />))}
                         <div className="clr" />
-                        <OnDeck onClientChange={(value:string) => setCurrentClient(value)} 
-                            onConsultantChange={(value:string) => setCurrentConsultant(value)}/>
+                        <OnDeck />
                     </Route>
-                    {/* <Route path="/client/:name">
-                        {( {match}: MatchProps ) => (console.log("match params name: " + match.params.name) )}
-                    </Route> */}
-                    {/* <Route path="/client/:name"> {( {match}: MatchProps) => (
-                        <ClientInformation clientName={match.params.name} /> )} 
-                    </Route> */}
-                    <Route path="/client">
-                        <ClientInformation clientName={currentClient} />
+                    <Route path="/client/:clientName">
+                        <ClientInformation />
                     </Route>
-                    <Route path="/consultant">
-                        <ConsultantInformation consultantName={currentConsultant} />
+                    <Route path="/consultant/:consultantName">
+                        <ConsultantInformation />
                     </Route>
                 </Switch>
             </div>
