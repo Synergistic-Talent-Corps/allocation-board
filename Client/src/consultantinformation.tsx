@@ -1,9 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-
-type ConsultantInformationProps = {
-    consultantName: string;
-}
+import { useParams } from 'react-router-dom';
 
 // object to store consultant information
 interface Consultant {
@@ -13,7 +10,10 @@ interface Consultant {
 }
 
 // component function
-function ConsultantInformation(props: ConsultantInformationProps) {
+function ConsultantInformation() {
+
+    // get the consultantName from useParams
+    const { consultantName } = useParams();
 
     let currentConsultant = {} as Consultant;
 
@@ -34,7 +34,7 @@ function ConsultantInformation(props: ConsultantInformationProps) {
     
     // find the current consultant
     consultants.forEach((consultant: Consultant) => {
-        if (consultant.consultantName === props.consultantName) {
+        if (consultant.consultantName === consultantName) {
             currentConsultant.consultantName = consultant.consultantName;
             currentConsultant.title = consultant.title;
             currentConsultant.email = consultant.email;

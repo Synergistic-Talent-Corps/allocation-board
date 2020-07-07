@@ -4,13 +4,8 @@ import { Allocation } from './client-block'
 import { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 
-type OnDeckProps = {
-    onClientChange: Function;
-    onConsultantChange: Function;
-}
-
 // component function
-function OnDeck(props: OnDeckProps) {
+function OnDeck() {
 
     let myStyleLink: CSSProperties = { color: 'black' };
 
@@ -52,7 +47,7 @@ function OnDeck(props: OnDeckProps) {
             <p>On Deck</p>
             <ul>
                 {onDeckArray.map((allocation, index) => {
-                    return <li key={index}><button onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style = {myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                    return <li key={index}><Link style = {myStyleLink} to={`/consultant/${allocation.consultantName}`}>{allocation.consultantName}</Link></li>
                 })}
             </ul>
         </div>

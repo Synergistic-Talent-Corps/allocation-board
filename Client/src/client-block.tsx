@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 
 type ClientBlockProps = {
     clientName: string;
-    onClientChange: Function;
-    onConsultantChange: Function;
 }
 
 // object to store allocations
@@ -83,21 +81,20 @@ function ClientBlock(props: ClientBlockProps) {
 
     return (
         <div className="clientblock">
-            {/* <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></button></h3> */}
-            <h3><button onClick={() => {props.onClientChange(props.clientName)}}><Link style = {myStyleLink} to='/client'>{props.clientName}</Link></button></h3>
+            <h4><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></h4>
             <ul>
 
             {allocationArray.map((allocation, index) => {
                 backgroundColor = consultantCloseToEndDate(allocation.clientEndDate);
 
                 if (allocation.tentative === true) {
-                    return <li key={index} style={myStyleOrange}><button style={myStyleOrange} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                    return <li key={index} style={myStyleOrange}><Link style={myStyleLink} to={`/consultant/${allocation.consultantName}`}>{allocation.consultantName}</Link></li>
                 } else if (backgroundColor === "#76ee00") {
-                    return <li key={index} style={myStyleGreen}><button style={myStyleGreen} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                    return <li key={index} style={myStyleGreen}><Link style={myStyleLink} to={`/consultant/${allocation.consultantName}`}>{allocation.consultantName}</Link></li>
                 } else if (backgroundColor === "yellow") {
-                    return <li key={index} style={myStyleYellow}><button style={myStyleYellow} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                    return <li key={index} style={myStyleYellow}><Link style={myStyleLink} to={`/consultant/${allocation.consultantName}`}>{allocation.consultantName}</Link></li>
                 } else if (backgroundColor === "red") {
-                    return <li key={index} style={myStyleRed}><button style={myStyleRed} onClick={() => {props.onConsultantChange(allocation.consultantName)}}><Link style={myStyleLink} to="/consultant">{allocation.consultantName}</Link></button></li>
+                    return <li key={index} style={myStyleRed}><Link style={myStyleLink} to={`/consultant/${allocation.consultantName}`}>{allocation.consultantName}</Link></li>
             }})}
             </ul>
         </div>
