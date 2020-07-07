@@ -8,7 +8,14 @@ export interface Client {
     phoneNumber: string,
     address: string,
     email: string,
-    pointOfContact: string
+    clientNotes: string,
+    namePOC: string,
+    titlePOC: string,
+    phoneNumberPOC: string,
+    emailAddressPOC: string,
+    primaryContact: string,
+    notesPOC: string,
+    tapAccountManager: string
 }
 
 // component function
@@ -41,46 +48,52 @@ function ClientInformation() {
             currentClient.phoneNumber = client.phoneNumber;
             currentClient.address = client.address;
             currentClient.email = client.email;
-            currentClient.pointOfContact = client.pointOfContact;
+            currentClient.clientNotes = client.clientNotes;
+            currentClient.namePOC = client.namePOC;
+            currentClient.titlePOC = client.titlePOC;
+            currentClient.phoneNumberPOC = client.phoneNumberPOC;
+            currentClient.emailAddressPOC = client.emailAddressPOC;
+            currentClient.primaryContact = client.primaryContact;
+            currentClient.notesPOC = client.notesPOC;
+            currentClient.tapAccountManager = client.tapAccountManager;
         }
     })
 
     return (
-        <form className="my-form">
-            <div className="form-group" >
+        <form className="client-form">
+            <div className="client-form-group" >
 
-                <input type="text" name="company_name" placeholder ={currentClient.clientName} />
-                <input type="text" name="phone_number" placeholder ={currentClient.phoneNumber} />
+                <input type="text" name="company_name" placeholder="Client Name" value={currentClient.clientName} />
+                <input type="text" name="phone_number" placeholder="Phone Number" value={currentClient.phoneNumber} />
                 <br />
                 <br />
-                <input type="text" name="physical_address" placeholder ={currentClient.address} />
-                <input type="text" name="email_address" placeholder ={currentClient.email} />
+                <input type="text" name="physical_address" placeholder="Address" value={currentClient.address} />
+                <input type="text" name="email_address" placeholder="Email" value={currentClient.email} />
                 <br />
                 <br />
                 {/* <!-- Write your comments here --> */}
                 <div className="poc">
                     <p>Person of Contact</p>
-                    <input type="text" name="poc_name" placeholder ="Name" />
-                    <input type="text" name="poc_title" placeholder ="Title/Name" />
+                    <input type="text" name="poc_name" placeholder="Name" value={currentClient.namePOC} />
+                    <input type="text" name="poc_title" placeholder="Title/Name" value={currentClient.titlePOC} />
                     <br />
                     <br />
-                    <input type="text" name="phone_number" placeholder ="Phone Number" />
-                    <input type="text" name="poc_email" placeholder ="Email" />
+                    <input type="text" name="phone_number" placeholder="Phone Number" value={currentClient.phoneNumberPOC} />
+                    <input type="text" name="poc_email" placeholder="Email" value={currentClient.emailAddressPOC} />
                     <br />
                     <br />
-                    <input type="checkbox" id="primary_contact" name="primary_contact" value="primary_contact" />
+                    <input type="checkbox" id="primary_contact" name="primary_contact" value={currentClient.primaryContact} />
                     <label> Primary Contact </label>
                         <br />
-                    <textarea placeholder="Notes"></textarea>
-                    <br />
+                    <textarea rows={5}placeholder="Notes" value={currentClient.notesPOC}></textarea>
+                <br />
                 </div>
                 {/* <!-- Write your comments here --> */}
                 <br />
                 <button type="button">Add Contact</button>
                 <br />
                 <br />
-
-                <textarea placeholder="Notes"></textarea>
+                <textarea rows={5} placeholder="Notes" value={currentClient.clientNotes}></textarea>
                 <br />
                 <br />
                 <button type="button" >Edit</button>

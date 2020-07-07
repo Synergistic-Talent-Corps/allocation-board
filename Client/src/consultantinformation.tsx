@@ -6,7 +6,10 @@ import { useParams } from 'react-router-dom';
 interface Consultant {
     consultantName: string,
     title: string,
-    email: string
+    email: string,
+    splitAllocation: string,
+    consultantSkills: string,
+    consultantNotes: string
 }
 
 // component function
@@ -38,6 +41,9 @@ function ConsultantInformation() {
             currentConsultant.consultantName = consultant.consultantName;
             currentConsultant.title = consultant.title;
             currentConsultant.email = consultant.email;
+            currentConsultant.splitAllocation = consultant.splitAllocation;
+            currentConsultant.consultantSkills = consultant.consultantSkills;
+            currentConsultant.consultantNotes = consultant.consultantNotes;
         }
     })
 
@@ -45,15 +51,15 @@ function ConsultantInformation() {
 
         <form className="my-form">
             <div className="form-group" >
-                <input type="text" name="name" placeholder ={currentConsultant.consultantName} />
-                <input type="text" name="title" placeholder ={currentConsultant.title} />
+                <input type="text" name="name" placeholder="Name" value={currentConsultant.consultantName} />
+                <input type="text" name="title" placeholder="Title" value={currentConsultant.title} />
                 <br />
                 <br />
-                <input type="text" name="email" placeholder ={currentConsultant.email} />
+                <input type="text" name="email" placeholder="Email" value={currentConsultant.email} />
                 {/* <a href="">Resume</a> */}
                 <br />
                 <br />
-                <input type="checkbox" id="SplitAllocation" name="SplitAllocation" value="Allocation1" />
+                <input type="checkbox" id="SplitAllocation" name="SplitAllocation" value={currentConsultant.splitAllocation} />
                 <label> Split Allocation </label>
                 <br />
 
@@ -70,8 +76,8 @@ function ConsultantInformation() {
                 <br />
                 <br />
 
-                <textarea placeholder="Employee Skills"></textarea>
-                <textarea placeholder="Notes"></textarea>
+                <textarea placeholder="Employee Skills" value={currentConsultant.consultantSkills}></textarea>
+                <textarea placeholder="Notes" value={currentConsultant.consultantNotes}></textarea>
                 <br />
                 <br />
                 <button type="button">Edit</button>
