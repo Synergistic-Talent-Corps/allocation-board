@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { InputFloatLeft, InputRight, TextArea, ButtonLeft, ButtonRight, DivSubForm, Form } from './ui/styledcomponents'
 
 // object to store client information
 export interface Client {
@@ -60,46 +61,44 @@ function ClientInformation() {
     })
 
     return (
-        <form className="client-form">
-            <div className="client-form-group" >
-
-                <input type="text" name="company_name" placeholder="Client Name" value={currentClient.clientName} />
-                <input type="text" name="phone_number" placeholder="Phone Number" value={currentClient.phoneNumber} />
+        <Form>
+            <div>
+                <InputFloatLeft type="text" name="company_name" placeholder={currentClient.clientName} />
+                <InputRight type="text" name="phone_number" placeholder={currentClient.phoneNumber} />
                 <br />
                 <br />
-                <input type="text" name="physical_address" placeholder="Address" value={currentClient.address} />
-                <input type="text" name="email_address" placeholder="Email" value={currentClient.email} />
+                <InputFloatLeft type="text" name="physical_address" placeholder={currentClient.address} />
+                <InputRight type="text" name="email_address" placeholder={currentClient.email} />
                 <br />
                 <br />
                 {/* <!-- Write your comments here --> */}
-                <div className="poc">
+                <DivSubForm>
                     <p>Person of Contact</p>
-                    <input type="text" name="poc_name" placeholder="Name" value={currentClient.namePOC} />
-                    <input type="text" name="poc_title" placeholder="Title/Name" value={currentClient.titlePOC} />
+                    <InputFloatLeft type="text" name="poc_name" placeholder={currentClient.namePOC} />
+                    <InputRight type="text" name="poc_title" placeholder={currentClient.titlePOC} />
                     <br />
                     <br />
-                    <input type="text" name="phone_number" placeholder="Phone Number" value={currentClient.phoneNumberPOC} />
-                    <input type="text" name="poc_email" placeholder="Email" value={currentClient.emailAddressPOC} />
+                    <InputFloatLeft type="text" name="phone_number" placeholder={currentClient.phoneNumberPOC} />
+                    <InputRight type="text" name="poc_email" placeholder={currentClient.emailAddressPOC} />
                     <br />
                     <br />
                     <input type="checkbox" id="primary_contact" name="primary_contact" value={currentClient.primaryContact} />
                     <label> Primary Contact </label>
                         <br />
-                    <textarea rows={5}placeholder="Notes" value={currentClient.notesPOC}></textarea>
+                    <TextArea rows={5} placeholder={currentClient.notesPOC} />
                 <br />
-                </div>
-                {/* <!-- Write your comments here --> */}
+                </DivSubForm>
                 <br />
-                <button type="button">Add Contact</button>
-                <br />
-                <br />
-                <textarea rows={5} placeholder="Notes" value={currentClient.clientNotes}></textarea>
+                <ButtonLeft type="button">Add Contact</ButtonLeft>
                 <br />
                 <br />
-                <button type="button" >Edit</button>
-                <button type="button">Save and Close</button>
+                <TextArea rows={5} placeholder={currentClient.clientNotes} />
+                <br />
+                <br />
+                <ButtonLeft type="button" >Edit</ButtonLeft>
+                <ButtonRight type="button">Save and Close</ButtonRight>
             </div>
-        </form>
+        </Form>
     )
 }
 

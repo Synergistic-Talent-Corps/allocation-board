@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // component function
 function Navbar() {
 
-    let myStyleLink: CSSProperties = { color: '#fff' };
+    let myStyleLink: CSSProperties = { color: '#fff', paddingRight: '15px' };
 
     return (
         <div id="navbar">
