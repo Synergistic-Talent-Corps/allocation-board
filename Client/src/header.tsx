@@ -6,10 +6,6 @@ type HeaderProps = {
 
 // component function
 function Header(props: HeaderProps) {
-    React.useEffect(() => {
-        //alert(document.querySelector('#myFooter'));
-    })
-
     return (
         <h1 id = "myHeader" className="primary-header">{props.text}</h1>
     )

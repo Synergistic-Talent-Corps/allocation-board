@@ -16,8 +16,6 @@ import { ConsultantInformation } from './consultantinformation';
 
 // main component function
 function App () {
-    const [ currentClient, setCurrentClient ] = useState<string>('');
-    const [ currentConsultant, setCurrentConsultant ] = useState<string>('');
 
     // state to hold all of the clients
     const [clients, setClients] = useState<Client[]>([]);

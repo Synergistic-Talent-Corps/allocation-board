@@ -44,6 +44,7 @@ function ClientBlock(props: ClientBlockProps) {
     let myStyleGreen: CSSProperties = { background: '#76ee00', color: 'black' }; // green background
     let myStyleOrange: CSSProperties = { background: 'orange', color: 'black' };
     let myStyleYellow: CSSProperties = { background: 'yellow', color: 'black' };
+
     let backgroundColor: string = "";
 
     // array of consultants under the client specified in props
@@ -81,7 +82,7 @@ function ClientBlock(props: ClientBlockProps) {
 
     return (
         <div className="clientblock">
-            <h4><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></h4>
+            <p><Link style = {myStyleLink} to={`/client/${props.clientName}`}>{props.clientName}</Link></p>
             <ul>
 
             {allocationArray.map((allocation, index) => {
