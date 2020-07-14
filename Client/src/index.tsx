@@ -1,45 +1,25 @@
-
-// from a terminal
-// npm run build
-
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
-import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Header } from './header';
-import { ClientBlock } from './client-block';
+import { Navbar } from './navbar';
+import { ClientBlocks } from './client-blocks';
 import { OnDeck } from './on-deck';
 import { Footer } from './footer';
-import { Navbar } from './navbar';
-import { ClientInformation, Client } from './clientinformation';
+import { ClientInformation } from './clientinformation';
 import { ConsultantInformation } from './consultantinformation';
+import { Store } from './store';
 
 // main component function
 function App () {
 
-    // state to hold all of the clients
-    const [clients, setClients] = useState<Client[]>([]);
-
-    // fetch the clients using an api call
-    async function fetchClients() {
-        const response = await fetch("http://localhost:5000/api/clients");
-
-        let data = await response.json();
-
-        // set the state for clients
-        setClients(data.clients);
-    }
-
-    useEffect(() => { fetchClients(); }, []);
-
     return (
         <Router>
-            <div>
-                <Navbar />
-                <Switch>
+            <Navbar />
+            <Switch>
+                <Store>
                     <Route exact path="/">
-                        {clients.map((client, index) => (<ClientBlock key={index} clientName={client.clientName} />))}
-                        <div className="clr" />
+                        <ClientBlocks />
                         <OnDeck />
                     </Route>
                     <Route path="/client/:clientName">
@@ -48,8 +28,8 @@ function App () {
                     <Route path="/consultant/:consultantName">
                         <ConsultantInformation />
                     </Route>
-                </Switch>
-            </div>
+                </Store>
+            </Switch>
         </Router>
     )
 }

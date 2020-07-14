@@ -1,43 +1,22 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { InputFloatLeft, InputRight, TextArea, ButtonLeft, ButtonRight, Form, DivSubForm } from './ui/styledcomponents'
-
-// object to store consultant information
-interface Consultant {
-    consultantName: string,
-    title: string,
-    email: string,
-    splitAllocation: string,
-    consultantSkills: string,
-    consultantNotes: string
-}
+import { Consultant, ConsultantsContext } from './store';
 
 // component function
 function ConsultantInformation() {
 
-    // get the consultantName from useParams
+    // access the ConsultantsContext in store
+    const storeConsultants: Array<Consultant> = useContext(ConsultantsContext);
+
+    // get the consultantName that was passed in on the route from useParams
     const { consultantName } = useParams();
 
     let currentConsultant = {} as Consultant;
 
-    // state to hold all of the consultants
-    const [consultants, setConsultants] = useState<Consultant[]>([]);
-
-    // fetch the consultants using an api call
-    async function fetchConsultants() {
-        const response = await fetch("http://localhost:5000/api/consultants");
-
-        let data = await response.json();
-    
-        // set the state for consultants
-        setConsultants(data.consultants);
-    }
-
-    useEffect(() => { fetchConsultants(); }, []);
-    
     // find the current consultant
-    consultants.forEach((consultant: Consultant) => {
+    storeConsultants.forEach((consultant: Consultant) => {
         if (consultant.consultantName === consultantName) {
             currentConsultant.consultantName = consultant.consultantName;
             currentConsultant.title = consultant.title;
@@ -49,7 +28,6 @@ function ConsultantInformation() {
     })
 
     return (
-
         <Form>
             <div>
                 <InputFloatLeft type="text" name="name" placeholder={currentConsultant.consultantName} />

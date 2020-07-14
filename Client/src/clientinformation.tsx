@@ -1,49 +1,22 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { InputFloatLeft, InputRight, TextArea, ButtonLeft, ButtonRight, DivSubForm, Form } from './ui/styledcomponents'
-
-// object to store client information
-export interface Client {
-    clientName: string,
-    phoneNumber: string,
-    address: string,
-    email: string,
-    clientNotes: string,
-    namePOC: string,
-    titlePOC: string,
-    phoneNumberPOC: string,
-    emailAddressPOC: string,
-    primaryContact: string,
-    notesPOC: string,
-    tapAccountManager: string
-}
+import { Client, ClientsContext } from './store';
 
 // component function
 function ClientInformation() {
 
-    // get the client name from useParams
+    // access the ClientsContext in store
+    const storeClients: Array<Client> = useContext(ClientsContext);
+
+    // // get the client name that was passed in on the route from useParams
     let { clientName } = useParams();
 
     let currentClient = {} as Client;
 
-    // state to hold all of the clients
-    const [clients, setClients] = useState<Client[]>([]);
-
-    // fetch the clients using an api call
-    async function fetchClients() {
-        const response = await fetch("http://localhost:5000/api/clients");
-
-        let data = await response.json();
-    
-        // set the state for clients
-        setClients(data.clients);
-    }
-
-    useEffect(() => { fetchClients(); }, []);
-    
     // find the current client
-    clients.forEach((client: Client) => {
+    storeClients.forEach((client: Client) => {
         if (client.clientName === clientName) {
             currentClient.clientName = client.clientName;
             currentClient.phoneNumber = client.phoneNumber;
