@@ -1,22 +1,12 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
+import { Allocation, AllocationsContext } from './store';
 
 type ClientBlockProps = {
     clientName: string;
 }
-
-// object to store allocations
-export interface Allocation {
-    consultantName: string,
-    clientName: string,
-    clientStartDate: string,
-    clientEndDate: string,
-    teamLead: boolean,
-    tentative: boolean,
-    splitAllocation: boolean
-};
 
 // check the end date for the consultant and return a color
 function consultantCloseToEndDate(clientEndDate: string): string {
@@ -46,27 +36,16 @@ function ClientBlock(props: ClientBlockProps) {
     let myStyleYellow: CSSProperties = { background: 'yellow', color: 'black' };
 
     let backgroundColor: string = "";
+    
+    // access the AllocationsContext in store
+    const storeAllocations: Array<Allocation> = useContext(AllocationsContext);
 
     // array of consultants under the client specified in props
     let allocationArray: Array<Allocation> = [];
 
-    // state to hold all of the allocations
-    const [allocations, setAllocations] = useState<Allocation[]>([]);
 
-    // fetch the allocations using an api call
-    async function fetchAllocations() {
-        const response = await fetch("http://localhost:5000/api/allocations");
-
-        let data = await response.json();
-    
-        // set the state for allocations
-        setAllocations(data.clientAllocations);
-    }
-
-    useEffect(() => { fetchAllocations(); }, []);
-    
     // load the array of allocations for the specified client
-    allocations.forEach((allocation: Allocation) => {
+    storeAllocations.forEach((allocation: Allocation) => {
         if (allocation.clientName === props.clientName) {
             let consultantAllocation = {} as Allocation;
             consultantAllocation.consultantName = allocation.consultantName;
